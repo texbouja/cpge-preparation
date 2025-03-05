@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter>
+    <title>Thèmes récurrents sur les équations différentielles</title>
+
+    <aside>
+        <title>Objectif</title>
+        <p>Ce chapitre propose une initiation à certaines thèmes liés aux <term>EDL</term>. Des notions qui sont abordées sous différentes formes dans les sujets de concours qui traitent des équations différentielles.</p>
+    </aside>
+
+    <section>
+        <title>Équation et application résolvantes</title>
+
+        <aside>
+            <title>Conventions et notations</title>
+            <p><m>a</m> et <m>b</m> sont des applications continues définies sur <m>I</m> à valeurs respectivement dans <m>\mathcal L(E)</m> et dans <m>E</m>. On considère les équations différentielles</p>
+            <men>(E) \quad x'=a(t)\cdot x+b(t)</men>
+            <men>(H) \quad x'=a(t)\cdot x</men>
+        </aside>
+
+        <aside>
+            <title>Équation résolvante de <m>(H)</m></title>
+            <ol>
+                <li><p>Le vocabulaire</p></li>
+            </ol>
+            <p>On appelle équation résolvante de <m>(H)</m>, l'équation différentielle linéaire <em>homogène</em> du premier ordre</p>
+            <men>(RH) \quad u'=a(t)\circ u</men>
+            <p>l'inconnue <m>u</m> étant une fonction dérivable de <m>I</m> dans <m>\mathcal L(E)</m>.</p>
+            <p><m>(RH)</m> s'écrit sous la forme <m>u'=\phi(t)\cdot u</m>, où <m>\phi</m> est l'application continue de <m>I</m> dans <m>\mathcal L(E)</m> définie par <m>\phi(t)\cdot v=a(t)\circ v</m> pour tout <m>t\in I</m> et <m>v\in\mathcal L(E)</m>.</p>
+            <p><m>\dim S_I(RH)=\dim \mathcal L(E)=(\dim E)^2</m>.</p>
+
+            <ol>
+                <li><p>Transfert de solutions</p></li>
+            </ol>
+            <p>Si <m>u</m> est une solution de <m>(RH)</m> sur <m>I</m> alors</p>
+            <ol>
+                <li><p>pour tout <m>e\in E</m>, <m>f:t\longmapsto u(t)\cdot e</m> est une solution de <m>(H)</m> sur <m>I</m>.</p></li>
+                <li><p>pour tout <m>v\in \mathcal L(E)</m>, <m>t\longmapsto u(t)\circ v</m> est une solution de <m>(RH)</m> sur <m>I</m>.</p></li>
+            </ol>
+
+            <ol>
+                <li><p>Conservation du rang</p></li>
+            </ol>
+            <p>Si <m>u</m> est une solution de <m>(RH)</m> sur <m>I</m> alors le rang de <m>u(t)</m> est le même pour tout <m>t\in I</m>. En particulier s'il existe <m>t_0\in I</m> tel que <m>u(t_0)</m> est inversible alors <m>u(t)</m> est inversible pour tout <m>t\in I</m>. On dit alors que <m>u</m> est une solution fondamentale de l'équation résolvante <m>(RH)</m>.</p>
+
+            <ol>
+                <li><p>Les solutions de <m>(RH)</m> et <m>(H)</m> en fonction d'une solution fondamentale</p></li>
+            </ol>
+            <p>Si <m>r</m> une solution fondamentale de <m>(RH)</m>, alors</p>
+            <ol>
+                <li><p>les solutions de <m>(RH)</m> sont les fonctions <m>u:t\longmapsto r(t)\circ v</m> où <m>v\in\mathcal L(E)</m>.</p></li>
+                <li><p>les solutions de <m>(H)</m> sont les fonctions <m>f:t\longmapsto r(t)\cdot e</m> où <m>e\in E</m>.</p></li>
+            </ol>
+            <p>Les solutions de <m>(H)</m> et celles de <m>(RH)</m> peuvent donc toutes s'exprimer à l'aide d'une seule solution de <m>(RH)</m>. Mais ce constat est à peu près inutile quand il s'agit de résoudre effectivement <m>(H)</m>. Il est beaucoup moins évident de déterminer une solution de <m>(RH)</m> que de déterminer directement des solutions de <m>(H)</m>.</p>
+            <p>Si <m>\mathcal B=(e_1,\ldots,e_d)</m> est une base de <m>E</m> alors les fonctions <m>f_k:t\longmapsto r(t)\cdot e_k</m> forment un système fondamental de solutions de <m>(H)</m>. Leurs wronksien dans la base <m>\mathcal B</m> est la fonction <m>W:t \longmapsto \det\big(r(t)\big)</m>.</p>
+            <p>d'où le titre de solution fondamentale attribué à ce genre d'application.</p>
+
+            <ol>
+                <li><p>Expression des solutions avec conditions initiales</p></li>
+            </ol>
+            <p>Si <m>t_0\in I</m> et <m>r</m> est l'unique solution de <m>(RH)</m> telle que <m>r(t_0)=\id_E</m> alors</p>
+            <ol>
+                <li><p>pour toute solution <m>f</m> de <m>(H)</m> : <m>f(t)=r(t)\cdot f(t_0),\; \forall t\in I</m>.</p></li>
+                <li><p>pour toute solution <m>u</m> de <m>(RH)</m> : <m>u(t)=r(t)\circ u(t_0),\;\forall t\in I</m>.</p></li>
+            </ol>
+        </aside>
+
+        <aside>
+            <title>Application résolvante de <m>(H)</m></title>
+            <ol>
+                <li><p>Définition de l'application résolvante</p></li>
+            </ol>
+            <p>On appelle application résolvante de l'équation homogène <m>(H)</m>, l'application <m>R:I\times I\longmapsto \mathcal L(E)</m> définie par</p>
+            <men>\forall (t,s)\in I^2,\; R(t,s)=r_s(t)</men>
+            <p>où <m>r_s</m> est l'unique solution de <m>(RH)</m> vérifiant <m>r_s(s)=\id_E</m>. Précisons :</p>
+            <ol>
+                <li><p>pour tout <m>(t,s)\in I^2</m>, <m>R(t,s)</m> donne la position dans <m>\mathcal L(E)</m> à l'instant <m>t</m> de la solution de <m>(RH)</m> qui est passée, ou passera, par <m>\id_E</m> à l'instant <m>s</m>.</p></li>
+                <li><p>si on fixe <m>s\in I</m>, l'application <m>t\longmapsto R(t,s)</m> donne l'évolution au cours du temps de la solution de <m>(RH)</m> qui est passé, ou passera, par <m>\id_E</m> à l'instant <m>s</m>.</p></li>
+                <li><p>si on fixe <m>t\in I</m>, l'application <m>s\longmapsto R(t,s)</m> est le flot à l'instant <m>t</m> de toutes les solutions qui sont passées, ou passeront par <m>\id_E</m> à l'instant <m>s</m>.</p></li>
+            </ol>
+
+            <ol>
+                <li><p>Une application pour les exprimer toutes</p></li>
+            </ol>
+            <p>Soit <m>t_0\in I</m></p>
+            <ol>
+                <li><p>Pour tout <m>u_0\in \mathcal L(E)</m>, l'unique solution <m>u</m> de <m>(RH)</m> telle que <m>u(t_0)=u_0</m> est donnée par <m>u(t)=R(t,t_0)\circ u_0</m>, soit <m>u(t)=R(t,t_0)\circ u(t_0)</m>.</p></li>
+                <li><p>pour tout <m>x_0\in E</m>, l'unique solution <m>f</m> de <m>(H)</m> telle que <m>f(t_0)=x_0</m> est donnée par <m>f(t)=R(t,t_0)\cdot x_0</m>, soit <m>f(t)=R(t,t_0)\cdot f(t_0)</m>.</p></li>
+            </ol>
+
+            <ol>
+                <li><p>Les propriétés de la résolvante</p></li>
+            </ol>
+            <ol>
+                <li><p>pour tout <m>(t,s)\in I^2</m>, <m>R(t,s)</m> est un endomorphisme inversible de <m>E</m>.</p></li>
+                <li><p>pour tout <m>(t,s,\ell)\in I^3</m>, <m>R(t,s)\circ R(s,\ell)=R(t,\ell)</m>. En particulier <m>R(t,s)^{-1}=R(s,t)</m>.</p></li>
+                <li><p><m>R</m> est de classe <m>\mathcal C^1</m> sur <m>I^2</m> et pour tout <m>(t,s)\in I^2</m></p>
+                    <men>
+                        \dd Rt(t,s)=a(t)\circ R(t,s) \\
+                        \dd Rs(t,s)=-R(t,s)\circ a(s)
+                    </men>
+                </li>
+            </ol>
+
+            <ol>
+                <li><p>Expression de la résolvante en fonction des solutions fondamentales</p></li>
+            </ol>
+            <p>Pour toute solution fondamentale <m>r</m> de l'équation <m>(RH)</m> on a</p>
+            <men>\forall (t,s)\in I^2,\; R(t,s)=r(t)\circ r(s)^{-1}</men>
+        </aside>
+
+        <aside>
+            <title>Résolvante et équation complète</title>
+            <ol>
+                <li><p>Variation des constantes</p></li>
+            </ol>
+            <p>Sachant que les solutions de <m>(H)</m> sont les fonctions <m>t\longmapsto r(t)\cdot e</m> où <m>e</m> est un vecteur quelconque de <m>E</m>, la méthode de la variation des constantes revient donc à faire varier le vecteur <m>e</m>. On pose donc <m>x(t)=r(t)\cdot e(t)</m>. Alors</p>
+            <men>(E)\Llra r(t)\cdot e'(t)=b(t)\Llra e'(t)=r(t)^{-1}\cdot b(t)</men>
+            <p>Ce qui permet en théorie de calculer <m>e'</m> et donc <m>e</m>.</p>
+
+            <ol>
+                <li><p>Formule de Duhammel</p></li>
+            </ol>
+            <p>Soit <m>(t_0,x_0)\in I\times E</m>. L'unique solution <m>f</m> de <m>(E)</m> vérifiant la condition initiale <m>f(t_0)=x_0</m> est donnée par la formule dite de Duhammel :</p>
+            <men>\forall t\in\R,\; f(t)=R(t,t_0)\cdot x_0+\int_{t_0}^tR(t,s)\cdot b(s)\dt s</men>
+            <p>Dans cette expression de <m>f(t)</m>, l'intégrale représente une solution particulière de l'équation <m>(E)</m>, la solution qui à l'instant <m>t_0</m> passe par le vecteur nul. L'autre partie est la solution de l'équation homogène <m>(H)</m> qui à l'instant <m>t_0</m> passe par le point <m>x_0</m>.</p>
+        </aside>
+
+        <aside>
+            <title>Résolvantes d'une équation à coefficients constants</title>
+            <p>L'équation résolvante de <m>(E)</m> est ici</p>
+            <men>u'=a\circ u \quad (RH)</men>
+            <ol>
+                <li><p>Les solutions de <m>(RH)</m> sont les fonctions <m>r:t\longmapsto \e^{ta}\circ r_0</m> où <m>r_0</m> est un endomorphisme quelconque de <m>E</m>. En particulier, l'application</p>
+                    <men>r:t\longmapsto \e^{ta}</men>
+                    <p>est une solution fondamentale de <m>(RH)</m>. Celle qui prend la valeur <m>\id_E</m> en <m>t=0</m>.</p>
+                </li>
+                <li><p>L'application résolvante <m>R</m> de <m>(H)</m> est donc donnée par</p>
+                    <men>\forall (t,s)\in \R^2,\; R(t,s)=\e^{(t-s)a}</men>
+                </li>
+            </ol>
+            <p>Le théorème <xref ref="theo:duh"/> est donc un cas particulier de la formule de Duhammel vue dans la section <xref ref="duhammel"/>, page <xref ref="duhammel"/>.</p>
+        </aside>
+    </section>
+
+    <section>
+        <title>Autour des équations scalaires du deuxième ordre</title>
+
+        <aside>
+            <title>Conventions et notations</title>
+            <p>Dans tout cette section, on se donne une <term>EDLS</term> d'ordre <m>2</m> <m>(E)</m> et son équation homogène <m>(H)</m> qu'on suppose normalisables sur l'intervalle <m>I</m>, sauf mention explicite du contraire,</p>
+            <men>
+                <md>
+                    <mrow>a(t)x'' + b(t)x' + c(t)x = \varphi(t) \quad (E)</mrow>
+                    <mrow>a(t)x'' + b(t)x' + c(t)x = 0 \quad (H)</mrow>
+                </md>
+            </men>
+            <p>On suppose en outre que l'intervalle <m>I</m> est ouvert.</p>
+        </aside>
+
+        <!-- Continuer la conversion des autres sections ici -->
+    </section>
+</chapter>
