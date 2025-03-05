@@ -372,90 +372,103 @@ I(x) \underset{x \to +\infty}{\sim} \frac{x}{\ln(x)}.
 \end{equation*}
 </div>
 </div></details></div></article></article><article class="subexercises" id="part-anaproba-2-2-5"><h4 class="heading"><span class="title">Marches aléatoires, récurrence</span></h4>
-<article class="exercise exercise-like" id="part-anaproba-2-2-5-2"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-2-1-1">Montrer que les séries entières définissant <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> ont un rayon de convergence supérieur ou égal à 1. Justifier alors que les fonctions <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> sont définies et de classe <span class="process-math">\(C^\infty\)</span> sur <span class="process-math">\(]-1,1[\text{.}\)</span> Montrer que <span class="process-math">\(G\)</span> est définie et continue sur <span class="process-math">\([-1,1]\)</span> et que</div>
+<div class="introduction" id="part-anaproba-2-2-5-2">
+<div class="para" id="part-anaproba-2-2-5-2-1">On considère les fonctions <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> définies par les formules</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x \in ]-1, 1[, \quad F(x) = \sum_{n=0}^{+\infty} P(S_n = 0_d) \, x^n;
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x \in ]-1, 1[, \quad G(x) = \sum_{n=1}^{+\infty} P(R = n) \, x^n.
+\end{equation*}
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-2-2-5-3"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-3-1-1">Montrer que les séries entières définissant <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> ont un rayon de convergence supérieur ou égal à 1. Justifier alors que les fonctions <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> sont définies et de classe <span class="process-math">\(C^\infty\)</span> sur <span class="process-math">\(]-1,1[\text{.}\)</span> Montrer que <span class="process-math">\(G\)</span> est définie et continue sur <span class="process-math">\([-1,1]\)</span> et que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 G(1) = P(R \neq +\infty).
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-2-2-1">Les séries entières définissant <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> sont de la forme <span class="process-math">\(\sum_{n=0}^{+\infty}
+<div class="solutions"><details id="part-anaproba-2-2-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-3-2-1">Les séries entières définissant <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> sont de la forme <span class="process-math">\(\sum_{n=0}^{+\infty}
 a_n x^n\)</span> avec <span class="process-math">\(a_n \leq 1\text{.}\)</span> Par conséquent, leur rayon de convergence est au moins 1. Les fonctions <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> sont donc définies et de classe <span class="process-math">\(C^\infty\)</span> sur <span class="process-math">\(]-1,1[\text{.}\)</span>
 </div>
-<div class="para" id="part-anaproba-2-2-5-2-2-2">Pour <span class="process-math">\(G\text{,}\)</span> la série converge en <span class="process-math">\(x = 1\)</span> car <span class="process-math">\(G(1) =
+<div class="para" id="part-anaproba-2-2-5-3-2-2">Pour <span class="process-math">\(G\text{,}\)</span> la série converge en <span class="process-math">\(x = 1\)</span> car <span class="process-math">\(G(1) =
 \sum_{n=1}^{+\infty} P(R = n) = P(R \neq +\infty)\text{.}\)</span>
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-3"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-3-1-1">Si <span class="process-math">\(k\)</span> et <span class="process-math">\(n\)</span> sont des entiers naturels non nuls tels que <span class="process-math">\(k \leq n\text{,}\)</span> montrer que</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-4"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-4-1-1">Si <span class="process-math">\(k\)</span> et <span class="process-math">\(n\)</span> sont des entiers naturels non nuls tels que <span class="process-math">\(k \leq n\text{,}\)</span> montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P((S_n = 0_d) \cap (R = k)) = P(R = k) P(S_{n-k} = 0_d).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-3-1-3">En déduire que</div>
+<div class="para" id="part-anaproba-2-2-5-4-1-3">En déduire que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \forall n \in \mathbb{N}^*, \quad P(S_n = 0_d) = \sum_{k=1}^n P(R = k) P(S_{n-k}
 = 0_d).
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-3-2-1">L’événement <span class="process-math">\((S_n = 0_d) \cap (R = k)\)</span> signifie que la marche revient en <span class="process-math">\(0_d\)</span> pour la première fois à l’instant <span class="process-math">\(k\text{,}\)</span> puis revient à nouveau en <span class="process-math">\(0_d\)</span> à l’instant <span class="process-math">\(n\text{.}\)</span> Par indépendance des pas, on a :</div>
+<div class="solutions"><details id="part-anaproba-2-2-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-4-2-1">L’événement <span class="process-math">\((S_n = 0_d) \cap (R = k)\)</span> signifie que la marche revient en <span class="process-math">\(0_d\)</span> pour la première fois à l’instant <span class="process-math">\(k\text{,}\)</span> puis revient à nouveau en <span class="process-math">\(0_d\)</span> à l’instant <span class="process-math">\(n\text{.}\)</span> Par indépendance des pas, on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P((S_n = 0_d) \cap (R = k)) = P(R = k) P(S_{n-k} = 0_d).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-3-2-3">En sommant sur <span class="process-math">\(k\text{,}\)</span> on obtient :</div>
+<div class="para" id="part-anaproba-2-2-5-4-2-3">En sommant sur <span class="process-math">\(k\text{,}\)</span> on obtient :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(S_n = 0_d) = \sum_{k=1}^n P(R = k) P(S_{n-k} = 0_d).
 \end{equation*}
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-4"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-4-1-1">Montrer que</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-5"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-5-1-1">Montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \forall x \in ]-1,1[, \quad F(x) = 1 + F(x) G(x).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-4-1-3">Déterminer la limite de <span class="process-math">\(F(x)\)</span> lorsque <span class="process-math">\(x \to 1^-\text{,}\)</span> en discutant selon la valeur de <span class="process-math">\(P(R \neq +\infty)\text{.}\)</span>
+<div class="para" id="part-anaproba-2-2-5-5-1-3">Déterminer la limite de <span class="process-math">\(F(x)\)</span> lorsque <span class="process-math">\(x \to 1^-\text{,}\)</span> en discutant selon la valeur de <span class="process-math">\(P(R \neq +\infty)\text{.}\)</span>
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-4-2-1">En utilisant la relation de convolution des probabilités, on a :</div>
+<div class="solutions"><details id="part-anaproba-2-2-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-5-2-1">En utilisant la relation de convolution des probabilités, on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F(x) = \sum_{n=0}^{+\infty} P(S_n = 0_d) x^n = 1 + \sum_{n=1}^{+\infty}
 \sum_{k=1}^n P(R = k) P(S_{n-k} = 0_d) x^n.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-4-2-3">En réorganisant les termes, on obtient :</div>
+<div class="para" id="part-anaproba-2-2-5-5-2-3">En réorganisant les termes, on obtient :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F(x) = 1 + F(x) G(x).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-4-2-5">Pour la limite de <span class="process-math">\(F(x)\)</span> lorsque <span class="process-math">\(x \to 1^-\text{,}\)</span> on distingue deux cas :</div>
-<ul class="disc" id="part-anaproba-2-2-5-4-2-6">
-<li id="part-anaproba-2-2-5-4-2-6-1"><div class="para" id="p-derived-part-anaproba-2-2-5-4-2-6-1">Si <span class="process-math">\(P(R \neq +\infty) \lt 1\text{,}\)</span> alors <span class="process-math">\(F(x)\)</span> converge vers une valeur finie.</div></li>
-<li id="part-anaproba-2-2-5-4-2-6-2"><div class="para" id="p-derived-part-anaproba-2-2-5-4-2-6-2">Si <span class="process-math">\(P(R \neq +\infty) = 1\text{,}\)</span> alors <span class="process-math">\(F(x)\)</span> diverge vers <span class="process-math">\(+\infty\)</span> .</div></li>
+<div class="para" id="part-anaproba-2-2-5-5-2-5">Pour la limite de <span class="process-math">\(F(x)\)</span> lorsque <span class="process-math">\(x \to 1^-\text{,}\)</span> on distingue deux cas :</div>
+<ul class="disc" id="part-anaproba-2-2-5-5-2-6">
+<li id="part-anaproba-2-2-5-5-2-6-1"><div class="para" id="p-derived-part-anaproba-2-2-5-5-2-6-1">Si <span class="process-math">\(P(R \neq +\infty) \lt 1\text{,}\)</span> alors <span class="process-math">\(F(x)\)</span> converge vers une valeur finie.</div></li>
+<li id="part-anaproba-2-2-5-5-2-6-2"><div class="para" id="p-derived-part-anaproba-2-2-5-5-2-6-2">Si <span class="process-math">\(P(R \neq +\infty) = 1\text{,}\)</span> alors <span class="process-math">\(F(x)\)</span> diverge vers <span class="process-math">\(+\infty\)</span> .</div></li>
 </ul>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-5"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-5-1-1">Soit <span class="process-math">\((c_k)_{k \in \mathbb{N}}\)</span> une suite d’éléments de <span class="process-math">\(\mathbb{R}^+\)</span> telle que la série entière <span class="process-math">\(\sum c_k x^k\)</span> ait un rayon de convergence 1 et que la série <span class="process-math">\(\sum c_k\)</span> diverge. Montrer que</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-6"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-6-1-1">Soit <span class="process-math">\((c_k)_{k \in \mathbb{N}}\)</span> une suite d’éléments de <span class="process-math">\(\mathbb{R}^+\)</span> telle que la série entière <span class="process-math">\(\sum c_k x^k\)</span> ait un rayon de convergence 1 et que la série <span class="process-math">\(\sum c_k\)</span> diverge. Montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=0}^{+\infty} c_k x^k \underset{x \to 1^-}{\longrightarrow} +\infty.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-5-1-3"><em class="emphasis">L’élément <span class="process-math">\(A\)</span> de <span class="process-math">\(\mathbb{R}^{++}\)</span> étant fixé, on montrera qu’il existe <span class="process-math">\(\alpha \in ]0,1[\)</span> tel que</em></div>
+<div class="para" id="part-anaproba-2-2-5-6-1-3"><em class="emphasis">L’élément <span class="process-math">\(A\)</span> de <span class="process-math">\(\mathbb{R}^{++}\)</span> étant fixé, on montrera qu’il existe <span class="process-math">\(\alpha \in ]0,1[\)</span> tel que</em></div>
 <div class="displaymath process-math">
 \begin{equation*}
 \forall x \in ]1-\alpha,1[, \quad \sum_{k=0}^{+\infty} c_k x^k \gt A.
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-5-2-1">La série <span class="process-math">\(\sum c_k\)</span> diverge, donc pour tout <span class="process-math">\(A \gt 0\text{,}\)</span> il existe un entier <span class="process-math">\(N\)</span> tel que <span class="process-math">\(\sum_{k=0}^N c_k \gt A\text{.}\)</span> Pour <span class="process-math">\(x \in
+<div class="solutions"><details id="part-anaproba-2-2-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-6-2-1">La série <span class="process-math">\(\sum c_k\)</span> diverge, donc pour tout <span class="process-math">\(A \gt 0\text{,}\)</span> il existe un entier <span class="process-math">\(N\)</span> tel que <span class="process-math">\(\sum_{k=0}^N c_k \gt A\text{.}\)</span> Pour <span class="process-math">\(x \in
 ]1-\alpha,1[\text{,}\)</span> on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -463,199 +476,221 @@ F(x) = 1 + F(x) G(x).
 (1-\alpha)^k.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-5-2-3">En choisissant <span class="process-math">\(\alpha\)</span> suffisamment petit, on peut garantir que <span class="process-math">\(\sum_{k=0}^N
+<div class="para" id="part-anaproba-2-2-5-6-2-3">En choisissant <span class="process-math">\(\alpha\)</span> suffisamment petit, on peut garantir que <span class="process-math">\(\sum_{k=0}^N
 c_k (1-\alpha)^k \gt A\text{,}\)</span> ce qui montre que <span class="process-math">\(\sum_{k=0}^{+\infty} c_k x^k
 \to +\infty\)</span> lorsque <span class="process-math">\(x \to 1^-\text{.}\)</span>
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-6"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-6-1-1">Montrer que la série <span class="process-math">\(\sum P(S_n = 0_d)\)</span> est divergente si et seulement si <span class="process-math">\(P(R
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-7"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-7-1-1">Montrer que la série <span class="process-math">\(\sum P(S_n = 0_d)\)</span> est divergente si et seulement si <span class="process-math">\(P(R
 \neq +\infty) = 1\text{.}\)</span>
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="part-anaproba-2-2-5-6-2-1">Si <span class="process-math">\(P(R \neq +\infty) = 1\text{,}\)</span> alors la marche revient presque sûrement en <span class="process-math">\(0_d\)</span> une infinité de fois, ce qui implique que <span class="process-math">\(\sum P(S_n = 0_d)\)</span> diverge. Réciproquement, si <span class="process-math">\(\sum P(S_n = 0_d)\)</span> diverge, alors la marche revient presque sûrement en <span class="process-math">\(0_d\text{,}\)</span> donc <span class="process-math">\(P(R \neq +\infty) = 1\text{.}\)</span>
-</div></div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-7"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-7-1-1">Pour <span class="process-math">\(i \in \mathbb{N}^*\text{,}\)</span> soit <span class="process-math">\(Y_i\)</span> la variable de Bernoulli indicatrice de l’événement</div>
+<div class="solutions"><details id="part-anaproba-2-2-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="part-anaproba-2-2-5-7-2-1">Si <span class="process-math">\(P(R \neq +\infty) = 1\text{,}\)</span> alors la marche revient presque sûrement en <span class="process-math">\(0_d\)</span> une infinité de fois, ce qui implique que <span class="process-math">\(\sum P(S_n = 0_d)\)</span> diverge. Réciproquement, si <span class="process-math">\(\sum P(S_n = 0_d)\)</span> diverge, alors la marche revient presque sûrement en <span class="process-math">\(0_d\text{,}\)</span> donc <span class="process-math">\(P(R \neq +\infty) = 1\text{.}\)</span>
+</div></div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-8"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-8-1-1">Pour <span class="process-math">\(i \in \mathbb{N}^*\text{,}\)</span> soit <span class="process-math">\(Y_i\)</span> la variable de Bernoulli indicatrice de l’événement</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \Big(S_i \notin \{S_k, 0 \leq k \leq i-1\}\Big).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-7-1-3">Montrer que, pour <span class="process-math">\(i \in \mathbb{N}^*\)</span> :</div>
+<div class="para" id="part-anaproba-2-2-5-8-1-3">Montrer que, pour <span class="process-math">\(i \in \mathbb{N}^*\)</span> :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(Y_i = 1) = P(R \gt i).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-7-1-5">En déduire que, pour <span class="process-math">\(n \in \mathbb{N}^*\)</span> :</div>
+<div class="para" id="part-anaproba-2-2-5-8-1-5">En déduire que, pour <span class="process-math">\(n \in \mathbb{N}^*\)</span> :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 E(N_n) = 1 + \sum_{i=1}^n P(R \gt i).
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-7-2-1">L’événement <span class="process-math">\(Y_i = 1\)</span> correspond au fait que la marche visite un nouveau point à l’instant <span class="process-math">\(i\text{,}\)</span> ce qui équivaut à <span class="process-math">\(R \gt i\text{.}\)</span> Ainsi, <span class="process-math">\(P(Y_i =
+<div class="solutions"><details id="part-anaproba-2-2-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-8-2-1">L’événement <span class="process-math">\(Y_i = 1\)</span> correspond au fait que la marche visite un nouveau point à l’instant <span class="process-math">\(i\text{,}\)</span> ce qui équivaut à <span class="process-math">\(R \gt i\text{.}\)</span> Ainsi, <span class="process-math">\(P(Y_i =
 1) = P(R \gt i)\text{.}\)</span>
 </div>
-<div class="para" id="part-anaproba-2-2-5-7-2-2">En sommant sur <span class="process-math">\(i\text{,}\)</span> on obtient :</div>
+<div class="para" id="part-anaproba-2-2-5-8-2-2">En sommant sur <span class="process-math">\(i\text{,}\)</span> on obtient :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 E(N_n) = 1 + \sum_{i=1}^n P(R \gt i).
 \end{equation*}
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-8"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-5-8-1-1">Conclure que</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-5-9"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-5-9-1-1">Conclure que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{E(N_n)}{n} \underset{n \to +\infty}{\longrightarrow} P(R = +\infty).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-8-1-3"><em class="emphasis">On pourra admettre et utiliser le théorème de Cesaro : si <span class="process-math">\((u_n)_{n \in
+<div class="para" id="part-anaproba-2-2-5-9-1-3"><em class="emphasis">On pourra admettre et utiliser le théorème de Cesaro : si <span class="process-math">\((u_n)_{n \in
 \mathbb{N}^*}\)</span> est une suite réelle convergeant vers le nombre réel <span class="process-math">\(\ell\text{,}\)</span> alors</em></div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{1}{n} \sum_{k=1}^n u_k \underset{n \to +\infty}{\longrightarrow} \ell.
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-5-8-2-1">Par le théorème de Cesaro, si <span class="process-math">\(P(R \gt i) \to P(R = +\infty)\text{,}\)</span> alors :</div>
+<div class="solutions"><details id="part-anaproba-2-2-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-5-9-2-1">Par le théorème de Cesaro, si <span class="process-math">\(P(R \gt i) \to P(R = +\infty)\text{,}\)</span> alors :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{1}{n} \sum_{i=1}^n P(R \gt i) \underset{n \to +\infty}{\longrightarrow}
 P(R = +\infty).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-5-8-2-3">Ainsi, <span class="process-math">\(\frac{E(N_n)}{n} \to P(R = +\infty)\text{.}\)</span>
+<div class="para" id="part-anaproba-2-2-5-9-2-3">Ainsi, <span class="process-math">\(\frac{E(N_n)}{n} \to P(R = +\infty)\text{.}\)</span>
 </div>
 </div></details></div></article></article><article class="subexercises" id="part-anaproba-2-2-6"><h4 class="heading"><span class="title">Les marches de Bernoulli sur <span class="process-math">\(\mathbb{Z}\)</span></span></h4>
-<article class="exercise exercise-like" id="part-anaproba-2-2-6-2"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-6-2-1-1">Pour <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> déterminer <span class="process-math">\(P(S_{2n+1} = 0)\)</span> et justifier l’égalité :</div>
+<div class="introduction" id="part-anaproba-2-2-6-2">
+<div class="para" id="part-anaproba-2-2-6-2-1">Dans cette question, <span class="process-math">\(d\)</span> est égal à 1 et on note donc simplement <span class="process-math">\(0_d = 0\text{.}\)</span> Par ailleurs, <span class="process-math">\(p\)</span> est un élément de <span class="process-math">\(]0,1[\text{,}\)</span> <span class="process-math">\(q = 1 - p\)</span> et la loi de <span class="process-math">\(X\)</span> est donnée par</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(X = 1) = p \quad \text{et} \quad P(X = -1) = q.
+\end{equation*}
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-2-2-6-3"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-6-3-1-1">Pour <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> déterminer <span class="process-math">\(P(S_{2n+1} = 0)\)</span> et justifier l’égalité :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(S_{2n} = 0) = \binom{2n}{n} (pq)^n.
 \end{equation*}
-</div>
-<div class="solutions"><details id="part-anaproba-2-2-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-6-2-2-1">Pour <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> la marche ne peut pas revenir à l’origine en un nombre impair de pas, donc <span class="process-math">\(P(S_{2n+1} = 0) = 0\text{.}\)</span>
-</div>
-<div class="para" id="part-anaproba-2-2-6-2-2-2">Pour <span class="process-math">\(P(S_{2n} = 0)\text{,}\)</span> on utilise le fait que la marche doit faire autant de pas à droite qu’à gauche. Le nombre de chemins possibles est <span class="process-math">\(\binom{2n}{n}\text{,}\)</span> et chaque chemin a une probabilité <span class="process-math">\((pq)^n\text{.}\)</span> Ainsi :</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P(S_{2n} = 0) = \binom{2n}{n} (pq)^n.
-\end{equation*}
-</div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-6-3"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-6-3-1-1">Pour <span class="process-math">\(x \in ]-1,1[\text{,}\)</span> donner une expression simple de <span class="process-math">\(G(x)\text{.}\)</span> Exprimer <span class="process-math">\(P(R
-= +\infty)\)</span> en fonction de <span class="process-math">\(|p - q|\text{.}\)</span> Déterminer la loi de <span class="process-math">\(R\text{.}\)</span>
 </div>
 <div class="solutions"><details id="part-anaproba-2-2-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-6-3-2-1">La fonction génératrice <span class="process-math">\(G(x)\)</span> est donnée par :</div>
+<div class="para" id="part-anaproba-2-2-6-3-2-1">Pour <span class="process-math">\(n \in \mathbb{N}\text{,}\)</span> la marche ne peut pas revenir à l’origine en un nombre impair de pas, donc <span class="process-math">\(P(S_{2n+1} = 0) = 0\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-2-2-6-3-2-2">Pour <span class="process-math">\(P(S_{2n} = 0)\text{,}\)</span> on utilise le fait que la marche doit faire autant de pas à droite qu’à gauche. Le nombre de chemins possibles est <span class="process-math">\(\binom{2n}{n}\text{,}\)</span> et chaque chemin a une probabilité <span class="process-math">\((pq)^n\text{.}\)</span> Ainsi :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(S_{2n} = 0) = \binom{2n}{n} (pq)^n.
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-6-4"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-6-4-1-1">Pour <span class="process-math">\(x \in ]-1,1[\text{,}\)</span> donner une expression simple de <span class="process-math">\(G(x)\text{.}\)</span> Exprimer <span class="process-math">\(P(R
+= +\infty)\)</span> en fonction de <span class="process-math">\(|p - q|\text{.}\)</span> Déterminer la loi de <span class="process-math">\(R\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-2-2-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-6-4-2-1">La fonction génératrice <span class="process-math">\(G(x)\)</span> est donnée par :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 G(x) = \sum_{n=1}^{+\infty} P(R = n) x^n.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-6-3-2-3">Pour une marche de Bernoulli symétrique (<span class="process-math">\(p = q = \frac{1}{2}\)</span>), on a :</div>
+<div class="para" id="part-anaproba-2-2-6-4-2-3">Pour une marche de Bernoulli symétrique (<span class="process-math">\(p = q = \frac{1}{2}\)</span>), on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 G(x) = 1 - \sqrt{1 - 4pqx^2}.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-6-3-2-5">La probabilité que la marche ne revienne jamais à l’origine est :</div>
+<div class="para" id="part-anaproba-2-2-6-4-2-5">La probabilité que la marche ne revienne jamais à l’origine est :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(R = +\infty) = 1 - G(1) = |p - q|.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-6-3-2-7">La loi de <span class="process-math">\(R\)</span> est une loi géométrique modifiée, avec <span class="process-math">\(P(R = n) =
+<div class="para" id="part-anaproba-2-2-6-4-2-7">La loi de <span class="process-math">\(R\)</span> est une loi géométrique modifiée, avec <span class="process-math">\(P(R = n) =
 \frac{1}{2n-1} \binom{2n}{n} (pq)^n\)</span> pour <span class="process-math">\(n \geq 1\text{.}\)</span>
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-6-4"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-6-4-1-1">On suppose que <span class="process-math">\(p = q = \frac{1}{2}\text{.}\)</span> Donner un équivalent simple de <span class="process-math">\(P(R
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-6-5"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-6-5-1-1">On suppose que <span class="process-math">\(p = q = \frac{1}{2}\text{.}\)</span> Donner un équivalent simple de <span class="process-math">\(P(R
 = 2n)\)</span> lorsque <span class="process-math">\(n\)</span> tend vers <span class="process-math">\(+\infty\text{.}\)</span> En déduire un équivalent simple de <span class="process-math">\(E(N_n)\)</span> lorsque <span class="process-math">\(n\)</span> tend vers <span class="process-math">\(+\infty\text{.}\)</span>
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-6-4-2-1">Pour <span class="process-math">\(p = q = \frac{1}{2}\text{,}\)</span> on a :</div>
+<div class="solutions"><details id="part-anaproba-2-2-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-6-5-2-1">Pour <span class="process-math">\(p = q = \frac{1}{2}\text{,}\)</span> on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(R = 2n) = \frac{1}{2n-1} \binom{2n}{n} \left(\frac{1}{4}\right)^n.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-6-4-2-3">En utilisant la formule de Stirling, on obtient l’équivalent :</div>
+<div class="para" id="part-anaproba-2-2-6-5-2-3">En utilisant la formule de Stirling, on obtient l’équivalent :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(R = 2n) \underset{n \to +\infty}{\sim} \frac{1}{\sqrt{\pi n^3}}.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-6-4-2-5">Pour <span class="process-math">\(E(N_n)\text{,}\)</span> on utilise le résultat de la question 12 :</div>
+<div class="para" id="part-anaproba-2-2-6-5-2-5">Pour <span class="process-math">\(E(N_n)\text{,}\)</span> on utilise le résultat de la question 12 :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 E(N_n) \underset{n \to +\infty}{\sim} \sqrt{\frac{8n}{\pi}}.
 \end{equation*}
 </div>
 </div></details></div></article></article><article class="subexercises" id="part-anaproba-2-2-7"><h4 class="heading"><span class="title">Un résultat asymptotique</span></h4>
-<article class="exercise exercise-like" id="part-anaproba-2-2-7-2"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-7-2-1-1">Soient <span class="process-math">\(m\)</span> et <span class="process-math">\(n\)</span> deux entiers naturels tels que <span class="process-math">\(m \gt n\text{.}\)</span> Montrer que</div>
+<div class="introduction" id="part-anaproba-2-2-7-2">
+<div class="para" id="part-anaproba-2-2-7-2-1">Soient <span class="process-math">\((a_n)_{n \in \mathbb{N}}\)</span> et <span class="process-math">\((b_n)_{n \in \mathbb{N}}\)</span> deux suites d’éléments de <span class="process-math">\(\mathbb{R}^{++}\text{.}\)</span> On suppose que <span class="process-math">\((a_n)_{n \in \mathbb{N}}\)</span> est décroissante et que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall n \in \mathbb{N}, \quad \sum_{k=0}^n a_k b_{n-k} = 1.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-2-2-7-2-3">On pose, pour <span class="process-math">\(n \in \mathbb{N}\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_n = \sum_{k=0}^n b_k.
+\end{equation*}
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-2-2-7-3"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-7-3-1-1">Soient <span class="process-math">\(m\)</span> et <span class="process-math">\(n\)</span> deux entiers naturels tels que <span class="process-math">\(m \gt n\text{.}\)</span> Montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \leq \frac{1}{B_n} \quad \text{et} \quad 1 \leq a_n B_{m-n} + a_0 (B_m -
 B_{m-n}).
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-7-2-2-1">Par définition, <span class="process-math">\(B_n = \sum_{k=0}^n b_k\text{.}\)</span> Comme <span class="process-math">\(a_n\)</span> est décroissante, on a :</div>
+<div class="solutions"><details id="part-anaproba-2-2-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-7-3-2-1">Par définition, <span class="process-math">\(B_n = \sum_{k=0}^n b_k\text{.}\)</span> Comme <span class="process-math">\(a_n\)</span> est décroissante, on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \leq \frac{1}{B_n}.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-7-2-2-3">Pour la deuxième inégalité, on utilise la relation de convolution :</div>
+<div class="para" id="part-anaproba-2-2-7-3-2-3">Pour la deuxième inégalité, on utilise la relation de convolution :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1 = \sum_{k=0}^n a_k b_{n-k} \leq a_n B_{m-n} + a_0 (B_m - B_{m-n}).
 \end{equation*}
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-7-3"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-7-3-1-1">On suppose dans cette question qu’il existe une suite <span class="process-math">\((m_n)_{n \in \mathbb{N}}\)</span> vérifiant <span class="process-math">\(m_n \gt n\)</span> pour <span class="process-math">\(n\)</span> assez grand et</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-7-4"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-7-4-1-1">On suppose dans cette question qu’il existe une suite <span class="process-math">\((m_n)_{n \in \mathbb{N}}\)</span> vérifiant <span class="process-math">\(m_n \gt n\)</span> pour <span class="process-math">\(n\)</span> assez grand et</div>
 <div class="displaymath process-math">
 \begin{equation*}
 B_{m_n - n} \underset{n \to +\infty}{\sim} B_n \quad \text{et} \quad B_{m_n} -
 B_{m_n - n} \underset{n \to +\infty}{\longrightarrow} 0.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-7-3-1-3">Montrer que</div>
+<div class="para" id="part-anaproba-2-2-7-4-1-3">Montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \underset{n \to +\infty}{\sim} \frac{1}{B_n}.
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-7-3-2-1">En utilisant les hypothèses, on a :</div>
+<div class="solutions"><details id="part-anaproba-2-2-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-7-4-2-1">En utilisant les hypothèses, on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \leq \frac{1}{B_n} \quad \text{et} \quad 1 \leq a_n B_{m_n - n} + a_0
 (B_{m_n} - B_{m_n - n}).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-7-3-2-3">Comme <span class="process-math">\(B_{m_n - n} \sim B_n\)</span> et <span class="process-math">\(B_{m_n} - B_{m_n - n} \to 0\text{,}\)</span> on en déduit que :</div>
+<div class="para" id="part-anaproba-2-2-7-4-2-3">Comme <span class="process-math">\(B_{m_n - n} \sim B_n\)</span> et <span class="process-math">\(B_{m_n} - B_{m_n - n} \to 0\text{,}\)</span> on en déduit que :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \underset{n \to +\infty}{\sim} \frac{1}{B_n}.
 \end{equation*}
 </div>
-</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-7-4"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
-<div class="para" id="part-anaproba-2-2-7-4-1-1">On suppose dans cette question qu’il existe <span class="process-math">\(C \gt 0\)</span> tel que</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-2-2-7-5"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-2-2-7-5-1-1">On suppose dans cette question qu’il existe <span class="process-math">\(C \gt 0\)</span> tel que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 b_n \underset{n \to +\infty}{\sim} \frac{C}{n}.
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-7-4-1-3">En utilisant la question 17 pour une suite <span class="process-math">\((m_n)_{n \in \mathbb{N}}\)</span> bien choisie, montrer que</div>
+<div class="para" id="part-anaproba-2-2-7-5-1-3">En utilisant la question 17 pour une suite <span class="process-math">\((m_n)_{n \in \mathbb{N}}\)</span> bien choisie, montrer que</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \underset{n \to +\infty}{\sim} \frac{1}{C \ln(n)}.
 \end{equation*}
 </div>
-<div class="solutions"><details id="part-anaproba-2-2-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="part-anaproba-2-2-7-4-2-1">Si <span class="process-math">\(b_n \sim \frac{C}{n}\text{,}\)</span> alors <span class="process-math">\(B_n \sim C \ln(n)\text{.}\)</span> En choisissant <span class="process-math">\(m_n
+<div class="solutions"><details id="part-anaproba-2-2-7-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-2-2-7-5-2-1">Si <span class="process-math">\(b_n \sim \frac{C}{n}\text{,}\)</span> alors <span class="process-math">\(B_n \sim C \ln(n)\text{.}\)</span> En choisissant <span class="process-math">\(m_n
 = 2n\text{,}\)</span> on vérifie que :</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -663,7 +698,7 @@ B_{m_n - n} = B_n \sim C \ln(n) \quad \text{et} \quad B_{m_n} - B_{m_n - n} \sim
 C \ln(2n) - C \ln(n) = C \ln(2).
 \end{equation*}
 </div>
-<div class="para" id="part-anaproba-2-2-7-4-2-3">Ainsi, d’après la question 17, on a :</div>
+<div class="para" id="part-anaproba-2-2-7-5-2-3">Ainsi, d’après la question 17, on a :</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a_n \underset{n \to +\infty}{\sim} \frac{1}{C \ln(n)}.
