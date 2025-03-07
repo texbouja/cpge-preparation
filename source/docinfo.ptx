@@ -5,6 +5,8 @@
 
 <!-- settings. -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+  <document-id>preparation-25</document-id>
+
   <!-- A unique name for the book in a catalog; for example, see https://pretextbook.org/catalog.html and https://runestone.academy/ns/books/index. It contains a simple lowercase string with no dashes or other special characters. See https://pretextbook.org/doc/guide/html/sec-publishing-to-runestone-academy.html for more information. --> 
   <!-- The next three lines are likely for mature projects only: -->
    <!-- <brandlogo url="" source="images/cover.png"/> --> 
@@ -19,15 +21,21 @@
     \newcommand{\R}{\mathbb R}
     \newcommand{\C}{\mathbb C}
     \newcommand{\K}{\mathbb K}
-    \renewcommand{\Pr}{\mathbb P}
-    \newcommand{\Es}{\mathbb E}
-    \newcommand{\Va}{\mathbb V}
+    \newcommand{\bbone}{\mathbb 1}
     \newcommand{\PP}{\mathbb P}
-    \newcommand{\ES}{\mathbb E}
-    \newcommand{\VA}{\mathbb V}
-    \newcommand\Cov{\operatorname{Cov}}
-    \newcommand\card{\operatorname{Card}}
-    \newcommand\qtext[1]{\quad\text{#1}\quad}
+    \newcommand{\EE}{\mathbb E}
+    \newcommand{\VV}{\mathbb V}
+    \newcommand\giv[1][\middle]{\nonscript\:#1\vert\nonscript\:\mathopen{}}
+    \renewcommand{\Pr}[2][]{\mathbb{P}\left(#2\right)}
+    \newcommand{\Es}[2][]{\mathbb{E}\left(#2\right)}
+    \newcommand{\Va}[2][]{\mathbb{V}\left(#2\right)}
+    \newcommand{\Cov}{\operatorname{Cov}}
+    \newcommand{\card}{\operatorname{Card}}
+    \newcommand{\qtext}[1]{\quad\text{#1}\quad}
+    \newcommand\der[2]{\frac{\mathrm d #1}{\mathrm d #2}}
+    \newcommand\pder[2]{\frac{\partial #1}{\partial #2}}
+    \newcommand\func[5]{#1\mathbin:\begin{array}[t]{rlc} #2 &amp; \longrightarrow &amp; #3 \\ #4 &amp; \longmapsto &amp; #5 \end{array}}
+    \newcommand\sfunc[3]{#1\mathbin :#2 \longmapsto #3}
     \renewcommand\llbracket{[\![}
     \renewcommand\rrbracket{]\!]}
     \newcommand\iic[1]{\llbracket #1 \rrbracket}
@@ -52,6 +60,8 @@
   <rename element="inlineexercise" xml:lang="fr-FR">Exercice</rename> 
   <rename element="insight" xml:lang="fr-FR">Vocabulaire</rename> 
   <rename element="note" xml:lang="fr-FR">Notation</rename> 
+  <rename element="chapter" xml:lang="fr-FR">Sujet</rename>
+  <rename element="answer" xml:lang="fr-FR">Réponse IA</rename> 
   <!-- It is possible to rename elements: --> 
   <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> --> 
   <!-- Specify the default type of cross reference: --> 
