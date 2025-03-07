@@ -123,22 +123,25 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="part-anaproba.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="part-anaproba.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><span class="next-button button disabled"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="part-anaproba.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="part-anaproba.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="part-anaproba-3.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{empheq}\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\C}{\mathbb C}
 \newcommand{\K}{\mathbb K}
-\renewcommand{\Pr}{\mathbb P}
-\newcommand{\Es}{\mathbb E}
-\newcommand{\Va}{\mathbb V}
+\newcommand{\bbone}{\mathbb 1}
 \newcommand{\PP}{\mathbb P}
-\newcommand{\ES}{\mathbb E}
-\newcommand{\VA}{\mathbb V}
-\newcommand\Cov{\operatorname{Cov}}
-\newcommand\card{\operatorname{Card}}
-\newcommand\qtext[1]{\quad\text{#1}\quad}
+\newcommand{\EE}{\mathbb E}
+\newcommand{\VV}{\mathbb V}
+\newcommand\giv[1][\middle]{\nonscript\:#1\vert\nonscript\:\mathopen{}}
+\renewcommand{\Pr}[2][]{\mathbb{P}\left(#2\right)}
+\newcommand{\Es}[2][]{\mathbb{E}\left(#2\right)}
+\newcommand{\Va}[2][]{\mathbb{V}\left(#2\right)}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\card}{\operatorname{Card}}
+\newcommand{\qtext}[1]{\quad\text{#1}\quad}
+\newcommand\func[5]{#1\mathbin:\begin{array}[t]{rlc} #2 &amp; \longrightarrow &amp; #3 \\ #4 &amp; \longmapsto &amp; #5 \end{array}}
 \renewcommand\llbracket{[\![}
 \renewcommand\rrbracket{]\!]}
 \newcommand\iic[1]{\llbracket #1 \rrbracket}
@@ -154,10 +157,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="1" data-max-levels="3"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-part contains-active">
 <div class="toc-title-box"><a href="part-anaproba.html" class="internal"><span class="codenumber">I</span> <span class="title">Analyse et probabilités</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-chapter contains-active">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="part-anaproba-2.html" class="internal"><span class="codenumber">1</span> <span class="title">Mines 2020, MP, Maths 2</span></a></div>
 <ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="part-anaproba-2.html#part-anaproba-2-2" class="internal"><span class="codenumber">1</span> <span class="title"></span></a></div></li></ul>
-</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="part-anaproba-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Mines 2024, MP, Maths 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="part-anaproba-3.html#part-anaproba-3-2" class="internal"><span class="codenumber">2</span> <span class="title">Généralisation d’une intégrale de Dirichlet et application</span></a></div></li></ul>
+</li>
+</ul>
 </li></ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="part-anaproba-2"><h2 class="heading">
 <span class="type">Sujet</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Mines 2020, MP, Maths 2</span>
@@ -747,7 +756,7 @@ E(N_n) \underset{n \to +\infty}{\sim} \frac{\pi n}{\ln(n)}.
 <div class="para" id="part-anaproba-2-2-8-4-2-3">Ce résultat est un théorème classique dû à Erdős et Dvoretzky.</div>
 </div></details></div></article></article></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="part-anaproba.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+<a class="previous-button button" href="part-anaproba.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-anaproba-3.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
