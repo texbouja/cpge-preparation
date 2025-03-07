@@ -12,10 +12,10 @@
     <!-- Include chapters -->
     <part xml:id="part-anaproba" >
       <title>Analyse et probabilités</title>
-      <!-- <chapter>
+      <chapter>
         <title> Mines 2020, MP, Maths 2 </title>
           <xi:include href="./mines2020m2/enocor.ptx"/>
-      </chapter> -->
+      </chapter>
       <chapter>
         <title> Mines 2024, MP, Maths 1 </title>
           <xi:include href="./mines2024m1/enocor.ptx"/>
