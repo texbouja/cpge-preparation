@@ -27,7 +27,7 @@
     <exercise>
         <statement>
             <p>
-                Montrer que pour tout <m>\theta \in [-\pi; \pi]</m>, la fonction <m>f</m> définie par
+                Montrer que pour tout <m>\theta \in ]-\pi; \pi[</m>, la fonction <m>f</m> définie par
                 <me>\func{f}{]0; +\infty[}{\mathbf{C}}{t}{\frac{t^{x-1}}{1 + te^{i\theta}}}</me>
                 est définie et intégrable sur <m>]0; +\infty[</m>.
             </p>
@@ -59,23 +59,9 @@
             </p>
         </answer>
         <solution>
-            <p> Il y a manque de rigueur dans la solution proposée par l'IA.</p>
-            <p>Soit <m>\theta\in ]-\pi,\pi[</m>. La fonction <m>t\longmapsto 1+te^{i\theta}</m> ne s'annule pas sur <m> ]0,+\infty[</m> donc <m>f</m> est continue sur <m>]0,+\infty[</m>. En outre
-    <md>
-        <mrow>f(t) \amp \sim_{t\to 0}\frac1{t^{1-x}} \amp\amp\amp
-        |f(t)| \amp \sim_{t\to+\infty}\frac{1}{t^{2-x}}</mrow>
-    </md>
-    avec <m>1-x\lt 1</m> et <m>2-x\gt 1</m>. Donc par comparaison à des fonctions de Riemann, la fonction <m>f</m> est intégrable sur <m>]0,+\infty[</m>
-    </p> 
-    <p> Si <m>\theta\in\{-\pi,\pi\}</m> alors <m>f(t)=\frac{t^{x-1}}{1-t}</m>, <m>f</m> est continue sur <m>]0,1[</m> et sur <m>]1,+\infty[</m> et en posant <m>t=1+u</m>
-    <me>
-        f(t)=\frac1u\exp\bigl((x-1)\ln(1+u)\bigr)\underset{u\to0}\longrightarrow x-1
-    </me>
-    Alors <m>f</m> se prolonge par continuité sur <m>]0,+\infty[</m>. Pour le reste elle est intégrable comme dans le cas <m>\theta\in]-\pi,\pi[</m>
-    </p>    
-    
-    
-    
+            <p> La justification du fait que <m>f</m> soit bien définie n'est pas très claire. Le reste est correct.</p>
+            <p> Si <m>t\in]0,+\infty[</m> alors <m>1+te^{i\theta}=0</m> si et seulement si <m>e^{i\theta}=-1/t</m>. Le nombre <m>e^{i\theta}</m> serait alors un réel négatif. Ce qui n'est possible que si <m>\theta=\pi\pmod {2\pi}</m>, ce qui est exclu puisque <m>\theta\in]-\pi,\pi[</m>.  
+            </p>
         </solution>
     </exercise>
 
@@ -119,19 +105,22 @@
             </p>
         </answer>
         <solution>
+            <p> Des imprécisions sur les propriétés à vérifier de la fonction <m>(\theta,t)\longmapsto \frac{t^{x-1}}{1+te^{i\theta}}</m>. La domination est correcte mais manque de détails. Vu la générécité de ce genre de questions, en voilà une rédaction alternative :
+            </p>
             <p>
                 Considérons la fonction 
     <me>
         \sfunc{\varphi}{(\theta,t)}{\frac{t^{x-1}}{1+te^{ i\theta}}} \quad (\theta,t)\in D= ]-\pi,\pi[\times ]0,+\infty[ 
     </me>
     <ul>  
-    <li><p><m>\varphi</m> est de classe <m>\mathcal C^1</m> sur <m>D</m> et on a 
+    <li><p><m>\varphi</m> est de classe <m>\mathcal C^1</m> sur <m>D</m> par opérations usuelles sur les fonctions de classe <m>\mathcal C^1</m> donc les fonctions partielles <m>t\longmapsto \varphi(\theta,t)</m> et <m>t\longmapsto \pder\varphi\theta(\theta,t)</m> sont continues pour tout <m>\theta\in]-\pi,\pi[</m> et <m>\theta\longmapsto \varphi(\theta,t)</m>  et <m>\theta\longmapsto \pder\varphi\theta(\theta,t)</m> sont continues pour tout <m>t\in]0,+\infty[</m>. Par ailleurs 
     <me>
         \pder \varphi\theta(\theta, t)=-\frac{i t^xe^{ i\theta}}{(1+te^{ i\theta})^2}
-    </me></p>
+    </me>
+    </p>
     </li>
     <li> 
-    <p>La fonction <m>r</m> est bien définie sur <m>]-\pi,\pi[</m> selon la question précédente
+    <p> les intégrales <m>\int_0^{+\infty}\varphi(\theta,t)\mathrm d t</m> sont convergentes d'après la question précédentes.
     </p>
     </li>
     <li><p> Soit comme suggéré par l'indication de l'énoncé <m>\beta\in]0,\pi[</m>. Fixons <m>t\gt0</m> 
@@ -143,7 +132,7 @@
     La fonction <m>\cos</m> est décroissante sur <m>[0,\pi]</m> donc 
     <me>
         \forall \theta\in[0,\beta]\; 
-        1+2\cos\theta+t^2\geq 1+2\cos\beta+t^2
+        1+2t\cos\theta+t^2\geq 1+2t\cos\beta+t^2
     </me>
     ce qui amène, par parité de la fonction <m>\cos</m>
     <me> 
@@ -153,7 +142,7 @@
     On en déduit que
     <me>
         \forall (\theta,t)\in[-\beta,\beta]{}\times{}]0,+\infty[\;
-        |\pder \varphi\theta(\theta,t)|\leq \frac{t^x}{|1+te^{ i\beta}|^2}
+        \biggl|\pder \varphi\theta(\theta,t)\biggr|\leq \frac{t^x}{|1+te^{ i\beta}|^2}
     </me>
     La fonction <m>\rho=|\pder \varphi\theta(\beta,\cdot)|</m> est continue et elle est intégrable sur <m>]0,+\infty[</m> car 
     <me>\begin{aligned}
