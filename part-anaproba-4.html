@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="fr-FR" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>XENS 2024, MP, Maths B</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Préparations aux concours">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.5.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c2d04816128ebb44.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
+</head>
+<body id="preparation-25" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Sauter au contenu</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="mines2020m2.html"><span class="title">Préparations aux concours:</span> <span class="subtitle">Sessions 2025</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Table des matières"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Table des matières</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Résultats de la recherche: </h2>
+<div id="searchempty" class="searchempty"><span>Aucun résultat.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="part-anaproba-3.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="part-anaproba.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><span class="next-button button disabled"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{mathtools}\require{empheq}\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\K}{\mathbb K}
+\newcommand{\bbone}{\mathbb 1}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\EE}{\mathbb E}
+\newcommand{\VV}{\mathbb V}
+\newcommand\giv[1][\middle]{\nonscript\:#1\vert\nonscript\:\mathopen{}}
+\renewcommand{\Pr}[2][]{\mathbb{P}\left(#2\right)}
+\newcommand{\Es}[2][]{\mathbb{E}\left(#2\right)}
+\newcommand{\Va}[2][]{\mathbb{V}\left(#2\right)}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\card}{\operatorname{Card}}
+\newcommand{\qtext}[1]{\quad\text{#1}\quad}
+\newcommand\der[2]{\frac{\mathrm d #1}{\mathrm d #2}}
+\newcommand\pder[2]{\frac{\partial #1}{\partial #2}}
+\newcommand\func[5]{#1\mathbin:\begin{array}[t]{rcl} #2 &amp; \longrightarrow &amp; #3 \\ #4 &amp; \longmapsto &amp; #5 \end{array}}
+\newcommand\sfunc[3]{#1\mathbin :#2 \longmapsto #3}
+\renewcommand\llbracket{[\![}
+\renewcommand\rrbracket{]\!]}
+\newcommand\iic[1]{\llbracket #1 \rrbracket}
+\let\geq\geqslant
+\let\leq\leqslant
+\let\ds\displaystyle
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="1" data-max-levels="3"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part-anaproba.html" class="internal"><span class="codenumber">I</span> <span class="title">Analyse et probabilités</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="part-anaproba-2.html" class="internal"><span class="codenumber">1</span> <span class="title">Mines 2020, MP, Maths 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="part-anaproba-2.html#part-anaproba-2-2" class="internal"><span class="codenumber">1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="part-anaproba-3.html" class="internal"><span class="codenumber">2</span> <span class="title">Mines 2024, MP, Maths 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="part-anaproba-3.html#part-anaproba-3-2" class="internal"><span class="codenumber">2</span> <span class="title">Généralisation d’une intégrale de Dirichlet et application</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="part-anaproba-4.html" class="internal"><span class="codenumber">3</span> <span class="title">XENS 2024, MP, Maths B</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises">
+<div class="toc-title-box"><a href="part-anaproba-4.html#part-anaproba-4-2" class="internal"><span class="codenumber">3</span> <span class="title">Exercices</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="part-anaproba-4.html#part-anaproba-4-2-1" class="internal"><span class="title">Notations</span></a></div></li></ul>
+</li></ul>
+</li>
+</ul>
+</li></ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="part-anaproba-4"><h2 class="heading">
+<span class="type">Sujet</span><span class="space"> </span><span class="codenumber">3</span><span class="space"> </span><span class="title">XENS 2024, MP, Maths B</span>
+</h2>
+<section class="exercises" id="part-anaproba-4-2"><h3 class="heading hide-type">
+<span class="type">Exercices</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercices</span>
+</h3>
+<section class="subsection" id="part-anaproba-4-2-1"><h4 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Notations</span>
+</h4>
+<div class="para" id="part-anaproba-4-2-1-2">On note <span class="process-math">\(N\)</span> l’ensemble des entiers naturels, <span class="process-math">\(N^*\)</span> l’ensemble des entiers naturels non nuls, <span class="process-math">\(Z\)</span> l’ensemble des entiers relatifs, <span class="process-math">\(R\)</span> l’ensemble des nombres réels et <span class="process-math">\(C\)</span> l’ensemble des nombres complexes. On note également <span class="process-math">\(C^*\)</span> l’ensemble des nombres complexes non nuls.</div>
+<div class="para" id="part-anaproba-4-2-1-3">Si <span class="process-math">\(E\)</span> désigne un <span class="process-math">\(R\)</span>-espace vectoriel et si <span class="process-math">\(v_1, \ldots, v_k\)</span> sont des éléments de <span class="process-math">\(E\text{,}\)</span> on note Vect <span class="process-math">\((v_1, \ldots, v_k)\)</span> le sous-espace vectoriel de <span class="process-math">\(E\)</span> engendré par les vecteurs <span class="process-math">\(v_1, \ldots, v_k\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-4">Si <span class="process-math">\(k \gt  1\)</span> est un entier et si <span class="process-math">\(E\)</span> désigne un <span class="process-math">\(R\)</span>-espace vectoriel de dimension finie, on note <span class="process-math">\(\mathcal{C}^k (R, E)\)</span> l’ensemble des fonctions de classe <span class="process-math">\(\mathcal{C}^k\)</span> de <span class="process-math">\(R\)</span> dans <span class="process-math">\(E\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-5">Soit <span class="process-math">\((E, \Vert  \cdot \Vert )\)</span> un <span class="process-math">\(R\)</span>-espace vectoriel normé de dimension finie. Si <span class="process-math">\(U\)</span> est un ouvert de <span class="process-math">\(E\)</span> et <span class="process-math">\(f : U \to E\)</span> une fonction différentiable, pour tout <span class="process-math">\(x \in U\)</span> on note <span class="process-math">\(df(x)\)</span> la différentielle de <span class="process-math">\(f\)</span> en <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-6">On rappelle que <span class="process-math">\(df(x)\)</span> est alors un endomorphisme <span class="process-math">\(R\)</span>-linéaire de <span class="process-math">\(E\text{.}\)</span> Si <span class="process-math">\(g\)</span> est un endomorphisme <span class="process-math">\(R\)</span>-linéaire de <span class="process-math">\(E\text{,}\)</span> on note <span class="process-math">\(\Vert g\Vert \)</span> sa norme d’opérateur, c’est-à-dire</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert g\Vert  = \sup\{\Vert g(v)\Vert  \mid v \in E, \Vert v\Vert  \leq 1\}.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-1-8">Pour <span class="process-math">\(a \in E\)</span> et <span class="process-math">\(r \gt  0\)</span> un nombre réel positif, on note <span class="process-math">\(B(a, r)\)</span> la boule ouverte de centre <span class="process-math">\(a\)</span> et rayon <span class="process-math">\(r\)</span> et <span class="process-math">\(B(a, r)\)</span> la boule fermée de centre <span class="process-math">\(a\)</span> et rayon <span class="process-math">\(r\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-9">On note Id<span class="process-math">\(_E\)</span> l’application identité de <span class="process-math">\(E\)</span> dans <span class="process-math">\(E\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-10">Si <span class="process-math">\(p\)</span> et <span class="process-math">\(q\)</span> désignent deux entiers naturels non nuls, on note <span class="process-math">\(\mathcal{M}_{p,q}(C)\)</span> l’ensemble des matrices à <span class="process-math">\(p\)</span> lignes et <span class="process-math">\(q\)</span> colonnes à coefficients dans <span class="process-math">\(C\text{.}\)</span> Si <span class="process-math">\(p = q\text{,}\)</span> on note <span class="process-math">\(\mathcal{M}_p(C)\)</span> pour <span class="process-math">\(\mathcal{M}_{p,p}(C)\)</span> et GL<span class="process-math">\(_p(C)\)</span> l’ensemble des matrices inversibles de <span class="process-math">\(\mathcal{M}_p(C)\text{.}\)</span> On identifie également le <span class="process-math">\(C\)</span>-espace vectoriel <span class="process-math">\(C^p\)</span> avec le <span class="process-math">\(C\)</span>-espace vectoriel des vecteurs colonnes <span class="process-math">\(\mathcal{M}_{p,1}(C)\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-1-11">Si <span class="process-math">\(A \in \mathcal{M}_p(C)\text{,}\)</span> on note exp<span class="process-math">\((A)\)</span> <span class="process-math">\(\in \mathcal{M}_p(C)\)</span> l’exponentielle de la matrice <span class="process-math">\(A\text{.}\)</span>
+</div></section><article class="subexercises" id="part-anaproba-4-2-2"><h4 class="heading"><span class="title">PREMIÈRE PARTIE</span></h4>
+<div class="introduction" id="part-anaproba-4-2-2-2">
+<div class="para" id="part-anaproba-4-2-2-2-1">Soit <span class="process-math">\(q : \mathbb{R} \to \mathbb{R}\)</span> une application continue, périodique de période <span class="process-math">\(T \gt 0\text{.}\)</span> On considère l’équation différentielle</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'' + qy = 0. \tag{1}
+\end{equation*}
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-4-2-2-3"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<article class="task exercise-like" id="part-anaproba-4-2-2-3-1"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-2-3-1-1-1">Justifier l’existence de deux solutions <span class="process-math">\(y_1\)</span> et <span class="process-math">\(y_2\)</span> dans <span class="process-math">\(\mathcal{C}^2(\mathbb{R}, \mathbb{C})\)</span> à (1) telles que :</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-2-3-1-1-2">
+\begin{align*}
+y_1(0) \amp= 1 \amp\amp\amp y_2(0) \amp= 0\\
+y_1'(0) \amp= 0 \amp\amp\amp y_2'(0) \amp= 1. 
+\end{align*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-3-1-1-3">Justifier que vect <span class="process-math">\((y_1, y_2)\)</span> est l’ensemble des solutions de (1) dans <span class="process-math">\(\mathcal{C}^2(\mathbb{R}, \mathbb{C})\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-3-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-3-1-2-1">L’équation (1) est une équation différentielle linéaire scalaire homogène d’ordre 2. Elle est normalisée et la fonction <span class="process-math">\(q\)</span> est continue sur <span class="process-math">\(\mathbb{R}\text{.}\)</span> Le théorème de Cauchy-Lipschitz implique alors l’existence et l’unicité de deux solutions <span class="process-math">\(y_1\)</span> et <span class="process-math">\(y_2\)</span> sur <span class="process-math">\(\mathbb{R}\)</span> telles que :</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-2-3-1-2-2">
+\begin{align*}
+y_1(0) \amp= 1 \amp\amp\amp y_2(0) \amp= 0\\
+y_1'(0) \amp= 0 \amp\amp\amp y_2'(0) \amp= 1. 
+\end{align*}
+</div>
+<span class="process-math">\(W\)</span><span class="process-math">\((y_1,y_2\)</span><span class="process-math">\(W(0)=1\ne0\)</span><span class="process-math">\((y_1,y_2)\)</span><span class="process-math">\((1)\text{.}\)</span><span class="process-math">\((1)\text{.}\)</span>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-2-3-2"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-2-3-2-1-1">Montrer que :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y_1(t)y_2'(t) - y_1'(t)y_2(t) = 1.
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-3-2-2-1">L’équation du wronskien de (1) s’écrit ici</div>
+<div class="displaymath process-math">
+\begin{equation*}
+w' = 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-3-2-2-3">Le wronskien <span class="process-math">\(W\)</span> de <span class="process-math">\(y_1\)</span> et <span class="process-math">\(y_2\)</span> est donc une fonction constante. Puisque <span class="process-math">\(W(0) = 1\)</span> alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y_1(t)y_2'(t) - y_1'(t)y_2(t) = 1
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-2-4"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-2-4-1-1">Montrer que si <span class="process-math">\(y \in \mathcal{C}^2(\mathbb{R}, \mathbb{C})\)</span> est une solution de (1), alors la fonction <span class="process-math">\(t \mapsto y(t + T)\)</span> l’est aussi. En déduire que pour tout <span class="process-math">\(t \in \mathbb{R}\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(t + T) = y(T)y_1(t) + y'(T)y_2(t).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-4-2-1">Soit <span class="process-math">\(y\)</span> une solution sur <span class="process-math">\(\mathbb{R}\)</span> de (1) et posons pour tout <span class="process-math">\(t \in \mathbb{R}, z(t) = y(t + T)\text{.}\)</span> On a pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y''(t + T) + q(t + T)y(t + T) = 0.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-4-2-3">Grâce à la <span class="process-math">\(T\)</span>-périodicité de la fonction <span class="process-math">\(q\text{,}\)</span> on a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z''(t) + q(t)z(t) = 0.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-4-2-5">La fonction <span class="process-math">\(z : t \mapsto y(t + T)\)</span> est donc une solution sur <span class="process-math">\(\mathbb{R}\)</span> de l’équation (1).</div>
+<div class="para logical" id="part-anaproba-4-2-2-4-2-6">
+<div class="para">Ensuite, puisque <span class="process-math">\((y_1, y_2)\)</span> est une base de <span class="process-math">\(S\text{,}\)</span> il existe des scalaires <span class="process-math">\(\lambda_1, \lambda_2 \in \mathbb{R}\)</span> tels que <span class="process-math">\(z = \lambda_1 y_1 + \lambda_2 y_2\text{.}\)</span> En dérivant cette expression et appliquant <span class="process-math">\(z\)</span> et <span class="process-math">\(z'\)</span> à 0 on obtient</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-2-4-2-6-7">
+\begin{gather*}
+z(0) = \lambda_1 y_1(0) + \lambda_2 y_2(0) = \lambda_1\\
+z'(0) = \lambda_1 y_1'(0) + \lambda_2 y_2'(0) = \lambda_2
+\end{gather*}
+</div>
+</div>
+<div class="para" id="part-anaproba-4-2-2-4-2-7">soit <span class="process-math">\(\lambda_1 = y(T)\)</span> et <span class="process-math">\(\lambda_2 = y'(T)\text{.}\)</span> Ainsi</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t + T) = y(T)y_1(t) + y'(T)y_2(t).
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-2-5"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-2-5-1-1">Soit <span class="process-math">\(\mu \in \mathbb{C}^*\text{,}\)</span> et soit <span class="process-math">\(\lambda \in \mathbb{C}\)</span> tel que <span class="process-math">\(\mu = e^{\lambda T}\text{.}\)</span> Montrer que les trois assertions suivantes sont équivalentes.</div> <div class="para" id="part-anaproba-4-2-2-5-1-2">a. L’équation (1) possède une solution <span class="process-math">\(y \in \mathcal{C}^2(\mathbb{R}, \mathbb{C})\)</span> non nulle qui vérifie :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t + T) = \mu y(t).
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-1-4">b. Le nombre complexe <span class="process-math">\(\mu\)</span> est solution de l’équation d’inconnue <span class="process-math">\(x\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 - (y_1(T) + y_2'(T)) x + 1 = 0.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-1-6">c. L’équation différentielle (1) possède une solution <span class="process-math">\(y \in \mathcal{C}^2(\mathbb{R}, \mathbb{C})\)</span> non nulle telle que :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t) = e^{\lambda t} u(t),
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-1-8">où <span class="process-math">\(u \in \mathcal{C}^2(\mathbb{R}, \mathbb{C})\)</span> est une fonction <span class="process-math">\(T\)</span>-périodique.</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-5-2-1">Introduisons l’application linéaire :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func\Phi S  S y{z : t \mapsto y(t + T)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-3">Selon la question précédente, <span class="process-math">\(\Phi\)</span> est bien à valeurs dans <span class="process-math">\(S\)</span> et elle vérifie</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall y \in S \quad \Phi(y) = y(T)y_1 + y'(T)y_2
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-5">Sa matrice dans la base <span class="process-math">\((y_1, y_2)\)</span> de <span class="process-math">\(S\)</span> est en outre :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = 
+\begin{pmatrix}
+y_1(T) \amp  y_2(T) \\
+y_1'(T) \amp  y_2'(T)
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-7">et de ce fait son polynôme caractéristique est</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X_\Phi = X^2 - \text{tr}(R)X + \det(R) = X^2 - (y_1(T) + y_2'(T))X + 1
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-9">(a) ⇔ (b) La propriété (a) équivaut à dire que <span class="process-math">\(\mu\)</span> est une valeur propre de <span class="process-math">\(\Phi\text{.}\)</span> La propriété (b), que <span class="process-math">\(\mu\)</span> est une racine de <span class="process-math">\(X_\Phi\text{.}\)</span> Les deux propriétés sont donc équivalentes.</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-10">(a) ⇔ (c) Considérons une solution non nulle <span class="process-math">\(y\)</span> quelconque de (1) et posons pour tout <span class="process-math">\(t \in \mathbb{R}, u(t) = e^{-\lambda t} y(t)\text{.}\)</span> La fonction <span class="process-math">\(u\)</span> est de classe <span class="process-math">\(\mathcal{C}^2\)</span> comme produit de fonction de classe <span class="process-math">\(\mathcal{C}^2\)</span> et pour tout <span class="process-math">\(t \in \mathbb{R}\)</span> on a les équivalences</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-2-5-2-11">
+\begin{align*}
+u(t + T) = u(t) \amp \Longleftrightarrow e^{-\lambda(t + T)} y(t + T) = e^{-\lambda t} y(t)\\
+\amp\Longleftrightarrow y(t + T) = e^{\lambda T} y(t)\\
+\amp\Longleftrightarrow y(t + T) = \mu y(t)
+\end{align*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-5-2-12">
+<span class="process-math">\(u\)</span> est donc <span class="process-math">\(T\)</span>-périodique si seulement si <span class="process-math">\(y\)</span> vérifie la propriété (a). Ainsi :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a) \Longleftrightarrow (b) \Longleftrightarrow (c)
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-2-6"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-2-6-1">
+<div class="para" id="part-anaproba-4-2-2-6-1-1">Soient <span class="process-math">\(\mu_1, \mu_2\)</span> les racines complexes de l’équation d’inconnue <span class="process-math">\(x\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 - (y_1(T) + y_2'(T)) x + 1 = 0.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="part-anaproba-4-2-2-6-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-2-6-2-1-1">Montrer que si <span class="process-math">\(\mu_1 \neq \mu_2\)</span> et si <span class="process-math">\(\lambda\)</span> est un nombre complexe tel que <span class="process-math">\(\mu_1 = e^{\lambda T}\text{,}\)</span> alors pour toute solution <span class="process-math">\(y\)</span> de (1), il existe deux fonctions <span class="process-math">\(T\)</span>-périodiques <span class="process-math">\(w_1\)</span> et <span class="process-math">\(w_2\text{,}\)</span> ainsi que deux nombres complexes <span class="process-math">\(\alpha\)</span> et <span class="process-math">\(\beta\)</span> tels que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t) = \alpha e^{\lambda t} w_1(t) + \beta e^{-\lambda t} w_2(t).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-6-2-2-1">Supposons que <span class="process-math">\(\mu_1 \neq \mu_2\text{.}\)</span> Le polynôme caractéristique <span class="process-math">\(X_\Phi\)</span> est donc scindé à racines simples et de ce fait <span class="process-math">\(\Phi\)</span> est diagonalisable. En outre <span class="process-math">\(\mu_1 \mu_2 = \det \Phi = 1\)</span> donc si on pose <span class="process-math">\(\mu_1 = e^{\lambda T}\)</span> alors <span class="process-math">\(\mu_2 = e^{-\lambda T}\text{.}\)</span> Considérons ensuite une base <span class="process-math">\((v_1, v_2)\)</span> de <span class="process-math">\(S\)</span> formée de vecteur propre respectivement associés à <span class="process-math">\(\mu_1\)</span> et à <span class="process-math">\(\mu_2\text{.}\)</span> Selon la question précédente, il existe des fonctions <span class="process-math">\(T\)</span>-périodiques et de classe <span class="process-math">\(\mathcal{C}^2\)</span> telles que pour tout <span class="process-math">\(t \in \mathbb{R}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_1(t) = e^{\lambda t} w_1(t) \quad v_2(t) = e^{-\lambda t} w_2(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-6-2-2-3">
+<span class="process-math">\((v_1, v_2)\)</span> étant une base de <span class="process-math">\(S\)</span> on a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t) = \alpha e^{\lambda t} w_1(t) + \beta e^{-\lambda t} w_2(t)
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-2-6-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-2-6-3-1-1">Supposons que <span class="process-math">\(\mu_1 = \mu_2\text{.}\)</span> Montrer que <span class="process-math">\(\mu_1 = \mu_2 = \pm 1\)</span> et que l’équation (1) admet une solution périodique dans <span class="process-math">\(\mathcal{C}^2(\mathbb{R}, \mathbb{C})\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-2-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-2-6-3-2-1">Supposons que <span class="process-math">\(\mu_1 = \mu_2\)</span> alors <span class="process-math">\(\mu_1^2 = \det \Phi = 1\)</span> et donc <span class="process-math">\(\mu_1 = \pm 1\text{.}\)</span> Soit <span class="process-math">\(y\)</span> un vecteur propre de <span class="process-math">\(\Phi\)</span> associé à <span class="process-math">\(\mu_1\text{.}\)</span> Selon la question précédente il existe une fonction <span class="process-math">\(u\)</span> <span class="process-math">\(T\)</span>-périodique et de classe <span class="process-math">\(\mathcal{C}^2\)</span> telle que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad y(t + T) = \mu_1 y(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-2-6-3-2-3">Si <span class="process-math">\(\mu_1 = 1\)</span> : alors <span class="process-math">\(y\)</span> est <span class="process-math">\(T\)</span>-périodique.</div>
+<div class="para" id="part-anaproba-4-2-2-6-3-2-4">Si <span class="process-math">\(\mu_1 = -1\)</span> : alors <span class="process-math">\(y(t + 2T) = y(t)\)</span> et donc <span class="process-math">\(y\)</span> est <span class="process-math">\(2T\)</span>-périodique.</div>
+<div class="para" id="part-anaproba-4-2-2-6-3-2-5">Dans tous les cas on a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Si } \mu_1 = \mu_2 \text{ alors (1) admet au moins une solution non nulle périodique.}
+\end{equation*}
+</div>
+</div></details></div></article></article></article><article class="subexercises" id="part-anaproba-4-2-3"><h4 class="heading"><span class="title">DEUXIÈME PARTIE</span></h4>
+<div class="introduction" id="part-anaproba-4-2-3-2"><div class="para" id="part-anaproba-4-2-3-2-1">Soit <span class="process-math">\(a \in E\)</span> et soit <span class="process-math">\(U\)</span> un ouvert de <span class="process-math">\(E\)</span> contenant <span class="process-math">\(a\text{.}\)</span> Soit <span class="process-math">\(f : U \to E\)</span> une application de classe <span class="process-math">\(\mathcal{C}^1\)</span> sur <span class="process-math">\(U\)</span> telle que <span class="process-math">\(df(a) = Id_E\text{.}\)</span>
+</div></div>
+<article class="exercise exercise-like" id="part-anaproba-4-2-3-3"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-3-3-1"><div class="para" id="part-anaproba-4-2-3-3-1-1">Soient <span class="process-math">\(V\)</span> un ouvert convexe de <span class="process-math">\(E\)</span> et <span class="process-math">\(h\)</span> une fonction de classe <span class="process-math">\(\mathcal{C}^1\)</span> de <span class="process-math">\(V\)</span> dans <span class="process-math">\(E\text{.}\)</span> On suppose qu’il existe un réel <span class="process-math">\(C \gt 0\)</span> tel que pour tout <span class="process-math">\(x \in V\text{,}\)</span> <span class="process-math">\(\Vert dh(x)\Vert  \leq C\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-3-3-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-3-2-1-1">Montrer que pour tous <span class="process-math">\(x_1\)</span> et <span class="process-math">\(x_2\)</span> dans <span class="process-math">\(V\text{,}\)</span> on a <span class="process-math">\(\Vert h(x_2) - h(x_1)\Vert  \leq C \Vert x_2 - x_1\Vert \text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-3-2-2-1">Soient <span class="process-math">\(x_1, x_2\)</span> deux éléments de <span class="process-math">\(V\text{.}\)</span> L’ouvert <span class="process-math">\(V\)</span> étant convexe, la fonction</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func\varphi{[0; 1]} Et  {h((1-t)x_1 + tx_2)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-2-2-3">est bien définie et elle est de classe <span class="process-math">\(\mathcal{C}^1\)</span> par composition de fonctions de classe <span class="process-math">\(\mathcal{C}^1\text{.}\)</span> En outre, on a par règle de différentiation d’une composée :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [0; 1] \quad \varphi'(t) = dh((1-t)x_1 + tx_2)(x_2 - x_1)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-2-2-5">et donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [0; 1] \quad \|\varphi'(t)\| \leq \|dh((1-t)x_1 + tx_2)\|\|x_2 - x_1\| \leq C\|x_2 - x_1\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-2-2-7">L’inégalité des accroissements finis appliquée à la fonction vectorielle <span class="process-math">\(\varphi\)</span> entre 0 et 1 donne ensuite</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\|h(x_2) - h(x_1)\| \leq C\|x_2 - x_1\|
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-3-3-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-3-3-1-1">Montrer qu’il existe un nombre réel <span class="process-math">\(r \gt 0\)</span> tel que <span class="process-math">\(B(a,r) \subset U\)</span> et</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x_1, x_2 \in \overline{B(a,r)}, \quad \Vert f(x_1) - f(x_2)\Vert  \geq \frac{1}{2} \Vert x_1 - x_2\Vert .
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-3-3-2-1">Soit un réel <span class="process-math">\(\rho \gt 0\)</span> tel que <span class="process-math">\(B(a, \rho) \subset U\text{.}\)</span> Considérons la fonction <span class="process-math">\(h\)</span> définie sur le convexe <span class="process-math">\(B(a, \rho)\)</span> par</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h(x) = f(x) - x
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-3">
+<span class="process-math">\(h\)</span> est de classe <span class="process-math">\(C^1\)</span> sur <span class="process-math">\(B(a, \rho)\)</span> comme combinaison linéaire de fonctions de classe <span class="process-math">\(C^1\)</span> et on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dh(a) = 0 \quad (\text{car } df(a) = id_E)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-5">L’application <span class="process-math">\(x \longmapsto dh(x)\)</span> est continue donc il existe un <span class="process-math">\(r \in ]0; \rho[\)</span> tel que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x \in B(a, r) \quad \|dh(x)\| \leq \frac{1}{2}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-7">D’après la question précédente, on a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\|h(x_1) - h(x_2)\| \leq \frac{1}{2}\|x_2 - x_2\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-9">Soit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\|f(x_1) - f(x_2) - (x_1 - x_2)\| \leq \frac{1}{2}\|x_2 - x_2\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-11">Et comme <span class="process-math">\(\|f(x_1) - f(x_2) - (x_1 - x_2)\| \geq \|x_1 - x_2\| - \|f(x_1) - f(x_2)\|\text{,}\)</span> on en déduit que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\|f(x_1) - f(x_2)\| \geq \frac{1}{2}\|x_1 - x_2\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-3-2-13">Quitte à remplacer <span class="process-math">\(r\)</span> par un rayon légèrement plus petit, on a démontré que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x_1, x_2 \in \overline{B(a, r)} \quad \|h(x_1) - h(x_2)\| \geq \frac{1}{2}\|x_2 - x_2\|
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-3-3-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-3-4-1-1">Montrer que pour tout <span class="process-math">\(x \in B(a,r)\text{,}\)</span> l’application linéaire <span class="process-math">\(df(x)\)</span> est injective.</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-3-4-2-1">Soit <span class="process-math">\(x \in B(a, r)\text{.}\)</span> Par différentiabilité de <span class="process-math">\(f\)</span> en <span class="process-math">\(x\text{,}\)</span> il existe <span class="process-math">\(\delta \gt 0\)</span> tel que pour tout vecteur <span class="process-math">\(h \in E\)</span> vérifiant <span class="process-math">\(\Vert h\Vert  \leq \delta\text{,}\)</span> on ait <span class="process-math">\(x + h \in U\)</span> et</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert f(x + h) - f(x) - df(x)(h)\Vert  \leq \frac{1}{4}\Vert h\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-3">et donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert df(x)(h)\Vert  \geq \Vert f(x + h) - f(x)\Vert  - \frac{1}{4}\Vert h\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-5">Puisque <span class="process-math">\(x\)</span> est dans la boule ouverte <span class="process-math">\(B(a, r)\text{,}\)</span> en posant <span class="process-math">\(\rho = \frac{1}{2}(r - \Vert x - a\Vert )\text{,}\)</span> on a <span class="process-math">\(B(x, \rho) \subset B(a, r)\text{.}\)</span> Si <span class="process-math">\(h\)</span> est un vecteur de <span class="process-math">\(E\)</span> tel que <span class="process-math">\(\Vert h\Vert  \leq \rho\text{,}\)</span> alors <span class="process-math">\(x + h \in B(a, r)\)</span> et donc, d’après la question précédente,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert f(x + h) - f(x)\Vert  \geq \frac{1}{2}\Vert h\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-7">Quitte à remplacer <span class="process-math">\(\delta\)</span> par <span class="process-math">\(\min(\delta, \rho)\text{,}\)</span> on peut ainsi écrire</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall h \in E \quad \Vert h\Vert  \leq \delta \implies \Vert df(x)(h)\Vert  \geq \frac{1}{4}\Vert h\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-9">Si maintenant <span class="process-math">\(h\)</span> est un vecteur non nul quelconque de <span class="process-math">\(E\text{,}\)</span> alors ceci implique que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\| df(x) \left( \frac{\delta}{\Vert h\Vert } h \right) \right\| \geq \frac{1}{4} \left\| \frac{\delta}{\Vert h\Vert } h \right\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-11">et par linéarité de l’application <span class="process-math">\(df(x)\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert df(x)(h)\Vert  \geq \frac{1}{4}\Vert h\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-3-4-2-13">On en déduit que Ker <span class="process-math">\(df(x) = \{0_E\}\)</span> et ainsi</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Pour tout } x \in B(a, r), \quad df(x) \text{ est un endomorphisme injectif de } E.
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-3-4"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-3-4-1"><div class="para" id="part-anaproba-4-2-3-4-1-1">Soit <span class="process-math">\(y_0 \in E\)</span> tel que <span class="process-math">\(\Vert y_0 - f(a)\Vert  \leq \frac{r}{4}\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-3-4-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-4-2-1-1">Montrer que l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g : \overline{B(a,r)} \longrightarrow \mathbb{R}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x \longmapsto \Vert y_0 - f(x)\Vert ^2
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-2-1-4">admet un minimum atteint en un point <span class="process-math">\(x_0\)</span> de <span class="process-math">\(B(a,r)\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-4-2-2-1">En tant qu’application de classe <span class="process-math">\(\mathcal{C}^1\text{,}\)</span> <span class="process-math">\(f\)</span> est continue. Par composition d’applications continues, <span class="process-math">\(g\)</span> est donc continue sur le compact <span class="process-math">\(B(a, r)\text{.}\)</span> Elle y est donc bornée et atteint ses bornes. D’où l’existence de <span class="process-math">\(x_0 \in B(a, r)\)</span> tel que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert y_0 - f(x_0)\Vert ^2 = \min_{x \in B(a, r)} \Vert y_0 - f(x)\Vert ^2
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-2-2-3">Supposons maintenant que <span class="process-math">\(x_0\)</span> est sur la sphère <span class="process-math">\(S(a, r)\text{.}\)</span> On aura alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Vert f(x_0) - y_0\Vert  \geq \Vert f(x_0) - f(a)\Vert  - \Vert f(a) - y_0\Vert 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\geq \frac{1}{2}\Vert x_0 - a\Vert  - \Vert f(a) - y_0\Vert 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\geq \frac{r}{2} - \frac{r}{4} = \frac{r}{4}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\geq \Vert f(a) - y_0\Vert 
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-2-2-8">ou encore <span class="process-math">\(g(x_0) \geq g(a)\)</span> et donc <span class="process-math">\(g(x_0) = g(a)\text{.}\)</span> On en déduit que soit <span class="process-math">\(x_0\)</span> est dans <span class="process-math">\(B(a, r)\text{,}\)</span> soit il est sur la sphère <span class="process-math">\(S(a, r)\)</span> mais dans ce cas <span class="process-math">\(g\)</span> atteint aussi son minimum en <span class="process-math">\(a\)</span> qui est dans <span class="process-math">\(B(a, r)\text{.}\)</span> Dans tous les cas :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g \text{ atteint son minimum sur le compact } B(a, r) \text{ en un point } x_0 \text{ de la boule ouverte } B(a, r).
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-3-4-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-4-3-1-1">Montrer que <span class="process-math">\(f(x_0) = y_0\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-4-3-2-1">Nous allons traiter le cas où la norme <span class="process-math">\(\Vert .\Vert \)</span> dérive d’un produit scalaire <span class="process-math">\(\langle .\rangle\)</span> de <span class="process-math">\(E\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-2">Posons alors pour tout <span class="process-math">\(x \in E\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(x) = \Vert x\Vert ^2
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-4">
+<span class="process-math">\(p\)</span> est une application de classe <span class="process-math">\(\mathcal{C}^1\)</span> sur <span class="process-math">\(E\)</span> avec pour tout <span class="process-math">\(x \in E\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall h \in E \quad dp(x)(h) = 2\langle x; h \rangle
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-6">
+<span class="process-math">\(g\)</span> est la composée de <span class="process-math">\(p\)</span> avec l’application de classe <span class="process-math">\(\mathcal{C}^1\text{,}\)</span> <span class="process-math">\(x \mapsto f(x) - y_0\text{,}\)</span> elle est donc de classe <span class="process-math">\(\mathcal{C}^1\)</span> par composition d’application de classe <span class="process-math">\(\mathcal{C}^1\)</span> et pour tout <span class="process-math">\(x \in U\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dg(x) = dp(f(x) - y_0) \circ df(x)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-8">Soit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall h \in E \quad dg(x)(h) = 2\langle f(x) - y_0; df(x)(h) \rangle
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-10">
+<span class="process-math">\(g\)</span> admet un minimum local au point <span class="process-math">\(x_0\)</span> de l’ouvert <span class="process-math">\(B(a,r)\)</span> donc sa différentielle est nulle en <span class="process-math">\(x_0\text{.}\)</span> Ce qui donne</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall h \in E \quad \langle f(x_0) - y_0; df(x_0)(h) \rangle = 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-4-3-2-12">Mais puisque <span class="process-math">\(df(x_0)\)</span> est un automorphisme de <span class="process-math">\(E\text{,}\)</span> cela implique que le vecteur <span class="process-math">\(f(x_0) - y_0\)</span> est orthogonal à <span class="process-math">\(E\)</span> et en particulier à lui-même. Il est donc nul.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall y_0 \in \overrightarrow{B(f(a), r/4)} \quad \exists x_0 \in B(a,r) ; \quad f(x_0) = y_0
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-3-5"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-3-5-1"><div class="para" id="part-anaproba-4-2-3-5-1-1">On note <span class="process-math">\(W = \{ y \in E | \Vert y - f(a)\Vert  \lt \frac{r}{4} \}\)</span> et <span class="process-math">\(V = f^{-1}(W) \cap B(a,r)\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-3-5-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-5-2-1-1">Justifier que <span class="process-math">\(V\)</span> et <span class="process-math">\(W\)</span> sont des ouverts de <span class="process-math">\(E\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-5-2-2-1">
+<span class="process-math">\(W\)</span> est la boule ouverte de centre <span class="process-math">\(f(a)\)</span> et de rayon <span class="process-math">\(r/4\text{,}\)</span> c’est donc un ouvert de <span class="process-math">\(E\text{.}\)</span> Ensuite, <span class="process-math">\(f^{-1}(W)\)</span> est un ouvert relatif de <span class="process-math">\(U\)</span> comme image réciproque d’un ouvert de <span class="process-math">\(E\)</span> par une application continue. Comme <span class="process-math">\(U\)</span> est lui-même un ouvert de <span class="process-math">\(E\text{,}\)</span> alors <span class="process-math">\(f^{-1}(W)\)</span> est un ouvert de <span class="process-math">\(E\text{.}\)</span> Finalement, <span class="process-math">\(V = f^{-1}(W) \cap B(a,r)\)</span> est un ouvert de <span class="process-math">\(E\)</span> puisque c’est l’intersection de deux ouverts de <span class="process-math">\(E\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W \text{ et } V \text{ sont des ouverts de } E.
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-3-5-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-3-5-3-1-1">Montrer que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func{f_V}VWx{f(x)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-5-3-1-3">est une bijection continue de <span class="process-math">\(V\)</span> sur <span class="process-math">\(W\)</span> dont la réciproque est une fonction continue sur <span class="process-math">\(W\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-3-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-3-5-3-2-1">Soit <span class="process-math">\(x \in V\text{.}\)</span> On a <span class="process-math">\(x \in f^{-1}(W)\)</span> donc <span class="process-math">\(f(x) \in W\text{.}\)</span> Ainsi, l’application <span class="process-math">\(f_{|V}\)</span> est bien définie de <span class="process-math">\(W\)</span> dans <span class="process-math">\(V\text{.}\)</span> Si maintenant <span class="process-math">\(y\)</span> est un élément de <span class="process-math">\(W\text{,}\)</span> alors <span class="process-math">\(y \in B(a,r/4)\)</span> et donc il existe, selon la question 6 (sol. 6), <span class="process-math">\(x \in B(a,r)\)</span> tel que <span class="process-math">\(f(x) = y\text{.}\)</span> Puisque <span class="process-math">\(f(x) \in W\text{,}\)</span> on a en fait <span class="process-math">\(x \in V\text{.}\)</span> Ce qui montre que <span class="process-math">\(f_{|V}\)</span> est une application surjective.</div>
+<div class="para" id="part-anaproba-4-2-3-5-3-2-2">Selon la propriété (??) on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x_1, x_2 \in B(a,r) \quad \|f(x_1) - f(x_2)\| \geq \frac{1}{2}\|x_1 - x_2\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-5-3-2-4">Ce qui montre que <span class="process-math">\(f\)</span> induit une injection sur <span class="process-math">\(B(a,r)\text{.}\)</span> Comme <span class="process-math">\(V \subset B(a,r)\text{,}\)</span> alors <span class="process-math">\(f_{|V}\)</span> est injective. À ce stade, on a justifié que <span class="process-math">\(f_{|V}\)</span> est une bijection de <span class="process-math">\(V\)</span> sur <span class="process-math">\(W\text{.}\)</span> Notons <span class="process-math">\(g\)</span> sa bijection réciproque. La propriété (??) s’écrit alors (en posant <span class="process-math">\(x_1 = g(y_1)\)</span> et <span class="process-math">\(x_2 = g(y_2)\)</span>)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall y_1, y_2 \in W \quad \|g(y_1) - g(y_2)\| \leq 2\|y_1 - y_2\|
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-3-5-3-2-6">Montrant que <span class="process-math">\(g\)</span> est lipschitzienne et de ce fait qu’elle est continue. Conclusions :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Il existe un ouvert } V \text{ voisinage de } a \text{ et un ouvert } W \text{ voisinage de } f(a) \text{ tels que } f \text{ induise une bijection de } V \text{ sur } W \text{ et telle que sa bijection réciproque soit continue.}
+\end{equation*}
+</div>
+</div></details></div></article></article></article><article class="subexercises" id="part-anaproba-4-2-4"><h4 class="heading"><span class="title">TROISIÈME PARTIE</span></h4>
+<div class="introduction" id="part-anaproba-4-2-4-2">
+<div class="para" id="part-anaproba-4-2-4-2-1">Soit <span class="process-math">\(A \in \mathcal{A}_n(\mathbb{C})\text{.}\)</span> On note <span class="process-math">\(\mathbb{C}[A]\)</span> l’ensemble des éléments de <span class="process-math">\(\mathcal{A}_n(\mathbb{C})\)</span> de la forme <span class="process-math">\(P(A)\)</span> où <span class="process-math">\(P \in \mathbb{C}[X]\)</span> est un polynôme. On note</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\mathbb{C}[A])^* = \{ B \in \mathbb{C}[A] \cap GL_n(\mathbb{C}) \mid B^{-1} \in \mathbb{C}[A] \}.
+\end{equation*}
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-4-2-4-3"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-4-3-1"><div class="para" id="part-anaproba-4-2-4-3-1-1">Justifier que <span class="process-math">\(\mathbb{C}[A]^*\)</span> est un sous-groupe abélien de <span class="process-math">\(GL_n(\mathbb{C})\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-4-3-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-3-2-1-1">Justifier que <span class="process-math">\(\mathbb{C}[A]^*\)</span> est un sous-groupe abélien de <span class="process-math">\(GL_n(\mathbb{C})\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="part-anaproba-4-2-4-3-2-2-1">
+<span class="process-math">\((\mathbb{C}[A])^*\)</span> est tout simplement le groupe des inversibles de l’anneau <span class="process-math">\(\mathbb{C}[A]\text{.}\)</span> Il est contenu dans <span class="process-math">\(GL_n(\mathbb{C})\)</span> donc il en est un sous-groupe. Son caractère abélien découle en outre du fait que <span class="process-math">\(\mathbb{C}[A]\)</span> est un anneau commutatif.</div></div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-4-3-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-3-3-1-1">Montrer que <span class="process-math">\((\mathbb{C}[A])^* = \mathbb{C}[A] \cap GL_n(\mathbb{C})\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-3-3-2-1">De par sa définition, on a <span class="process-math">\((\mathbb{C}[A])^* \subset \mathbb{C}[A] \cap GL_n(\mathbb{C})\text{.}\)</span> Réciproquement, considérons un élément <span class="process-math">\(M \in \mathbb{C}[A] \cap GL_n(\mathbb{C})\)</span> et soit <span class="process-math">\(P \in \mathbb{C}[X]\)</span> tel que <span class="process-math">\(M = P(A)\text{.}\)</span> Notons <span class="process-math">\(D\)</span> le pgcd de <span class="process-math">\(P\)</span> avec <span class="process-math">\(\pi_A\text{,}\)</span> le polynôme minimal de <span class="process-math">\(A\text{,}\)</span> et considérons <span class="process-math">\(Q \in \mathbb{C}[X]\)</span> tel que <span class="process-math">\(\pi_A = DQ\text{.}\)</span> Le polynôme <span class="process-math">\(QP\)</span> est alors divisible par <span class="process-math">\(\pi_A\)</span> et donc <span class="process-math">\(Q(A)M = (QP)(A) = 0\text{.}\)</span> La matrice <span class="process-math">\(M\)</span> étant inversible, cela implique que <span class="process-math">\(Q(A) = 0\)</span> et donc que <span class="process-math">\(\pi_A\)</span> divise <span class="process-math">\(Q\text{,}\)</span> signifiant que <span class="process-math">\(Q = \pi_A\)</span> ou encore que <span class="process-math">\(D = 1\text{.}\)</span> Ainsi, <span class="process-math">\(P\)</span> est premier avec <span class="process-math">\(\pi_A\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-4-3-3-2-2">Soit alors, selon le théorème de Bezout, <span class="process-math">\(U, V \in \mathbb{C}[X]\)</span> tels que <span class="process-math">\(UP + V\pi_A = 1\text{.}\)</span> En appliquant à <span class="process-math">\(A\text{,}\)</span> on obtient <span class="process-math">\(U(A)M = I_n\text{.}\)</span> Donc <span class="process-math">\(M^{-1} = U(A)\)</span> et par suite <span class="process-math">\(M^{-1} \in \mathbb{C}[A]\text{.}\)</span> Alors <span class="process-math">\(M \in (\mathbb{C}[A])^*\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\mathbb{C}[A])^* = \mathbb{C}[A] \cap GL_n(\mathbb{C})
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-4-4"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-4-4-1-1">Montrer que <span class="process-math">\(\exp(\mathbb{C}[A]) \subset (\mathbb{C}[A])^*\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-4-2-1">En tant que sous-espace vectoriel (de dimension finie) de <span class="process-math">\(\mathcal{M}_n(\mathbb{C})\text{,}\)</span> <span class="process-math">\(\mathbb{C}[A]\)</span> est un fermé de <span class="process-math">\(\mathcal{M}_n(\mathbb{C})\text{.}\)</span> Soit maintenant <span class="process-math">\(B \in \mathbb{C}[A]\text{.}\)</span> La suite des sommes partielles de la série <span class="process-math">\(\sum \frac{1}{k!} B^k\)</span> est une suite d’éléments de <span class="process-math">\(\mathbb{C}[A]\)</span> car celui-ci est une sous-algèbre de <span class="process-math">\(\mathcal{M}_n(\mathbb{C})\text{.}\)</span> Cette suite converge vers <span class="process-math">\(e^B\text{.}\)</span> Puisque <span class="process-math">\(\mathbb{C}[A]\)</span> est un fermé, alors <span class="process-math">\(e^B \in \mathbb{C}[A]\text{.}\)</span> L’inverse <span class="process-math">\(e^{-B}\)</span> de <span class="process-math">\(e^B\)</span> est aussi dans <span class="process-math">\(\mathbb{C}[A]\)</span> pour les mêmes raisons puisque <span class="process-math">\(-B \in \mathbb{C}[A]\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\exp(\mathbb{C}[A]) \subset (\mathbb{C}[A])^*
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-4-5"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-4-5-1">
+<div class="para" id="part-anaproba-4-2-4-5-1-1">Pour <span class="process-math">\(a \in \mathbb{R}\text{,}\)</span> on définit l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func{Z_a}{[0,1]}{\mathbb{C}}t{t + iat(1 - t)}.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="part-anaproba-4-2-4-5-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-5-2-1-1">Montrer que l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func{Z}{{}]0 ; 1[{} \times \mathbb{R}}{\mathbb{C}}{(t,a)}{Z_a(t)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-2-1-3">est injective.</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-5-2-2-1">Notons <span class="process-math">\(\sigma\)</span> l’application en question et considérons des éléments <span class="process-math">\((t, a)\)</span> et <span class="process-math">\((s, b)\)</span> de <span class="process-math">\(]0; 1[ \times \mathbb{R}\)</span> tels que <span class="process-math">\(\sigma(t, a) = \sigma(s, b)\text{.}\)</span> Alors :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t + iat(1 - t) = s + ibs(1 - s)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-2-2-3">L’identification des parties réelles dans cette égalité donne <span class="process-math">\(t = s\text{,}\)</span> celle des parties imaginaires donne ensuite <span class="process-math">\(a = b\)</span> (car <span class="process-math">\(t(1 - t) \neq 0\)</span>). D’où l’injectivité de <span class="process-math">\(\sigma\text{.}\)</span>
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-4-5-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-5-3-1-1">Soient <span class="process-math">\(M_1\)</span> et <span class="process-math">\(M_2\)</span> deux éléments de <span class="process-math">\((\mathbb{C}[A])^*\text{.}\)</span> Montrer qu’il existe <span class="process-math">\(a \in \mathbb{R}\)</span> tel que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [0,1], \quad M(t) = Z_a(t)M_1 + (1 - Z_a(t))M_2 \in (\mathbb{C}[A])^*.
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-5-3-2-1">Apparemment <span class="process-math">\(M(t) \in \mathbb{C}[A]\)</span> pour tout <span class="process-math">\(t \in [0; 1]\)</span> quelque soit le choix du réel <span class="process-math">\(a\text{.}\)</span> Considérons le polynôme</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P = \det(XM_1 + (1 - X)M_2)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-3-2-3">
+<span class="process-math">\(P\)</span> est non nul car <span class="process-math">\(P(0) = \det M_2 \neq 0\)</span> donc il admet un nombre fini de racines qu’on va noter <span class="process-math">\(z_1, z_2, \ldots, z_r\text{.}\)</span> Posons ensuite</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z = \left\{ a \in \mathbb{R} \mid \exists k \in [1; r], \exists t \in [0; 1[ ; Z_a(t) = z_k] \right\}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-3-2-5">Par injectivité de l’application <span class="process-math">\(\sigma\)</span> introduite dans la question précédente, l’ensemble des couples <span class="process-math">\((t, a) \in [0; 1[ \times \mathbb{R}\)</span> tels que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z_a(t) \in \{z_1, z_2, \ldots, z_r\}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-3-2-7">est fini. L’ensemble <span class="process-math">\(Z\)</span> est donc fini. Soit <span class="process-math">\(a \in \mathbb{C} \setminus Z\text{.}\)</span> Alors, pour tout <span class="process-math">\(t \in [0; 1[\text{,}\)</span> <span class="process-math">\(Z_a(t)\)</span> n’est pas une racine de <span class="process-math">\(P\text{.}\)</span> En posant pour tout <span class="process-math">\(t \in [0; 1]\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M(t) = Z_a(t)M_1 + (1 - Z_a(t))M_2
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-3-2-9">on a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [0; 1[ \quad \det(M(t)) \neq 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-5-3-2-11">Cette observation s’étend aussi à <span class="process-math">\(t \in \{0, 1\}\)</span> puisque <span class="process-math">\(M(0) = M_2\)</span> et <span class="process-math">\(M(1) = M_1\text{.}\)</span> Pour tout <span class="process-math">\(t \in [0; 1]\text{,}\)</span> <span class="process-math">\(M(t)\)</span> est donc un élément de <span class="process-math">\(\mathbb{C}[A] \cap GL_n(\mathbb{C})\text{,}\)</span> soit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [0; 1] \quad M(t) \in (\mathbb{C}[A])^*
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-4-5-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-5-4-1-1">En déduire que <span class="process-math">\((\mathbb{C}[A])^*\)</span> est connexe par arcs.</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-5-4-2-1">
+<span class="process-math">\(M_1\)</span> et <span class="process-math">\(M_2\)</span> étant des points quelconques de <span class="process-math">\((\mathbb{C}[A])^*\text{,}\)</span> l’application <span class="process-math">\(M\)</span> ainsi définie est continue et elle est à valeurs dans <span class="process-math">\((\mathbb{C}[A])^*\text{.}\)</span> C’est un chemin continu qui permet de joindre <span class="process-math">\(M_2\)</span> à <span class="process-math">\(M_1\)</span> dans <span class="process-math">\((\mathbb{C}[A])^*\text{.}\)</span> Alors :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\mathbb{C}[A])^* \text{ est connexe par arcs}
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-4-6"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-4-6-1"><div class="para" id="part-anaproba-4-2-4-6-1-1">Montrer qu’il existe un ouvert <span class="process-math">\(U\)</span> de <span class="process-math">\(\mathbb{C}[A]\)</span> contenant <span class="process-math">\(0\)</span> et un ouvert <span class="process-math">\(V\)</span> de <span class="process-math">\(\mathbb{C}[A]\)</span> contenant la matrice identité <span class="process-math">\(I_n\)</span> tels que la fonction exponentielle induit une bijection continue de <span class="process-math">\(U \subset \mathbb{C}[A]\)</span> sur <span class="process-math">\(V\)</span> dont la réciproque est une fonction continue sur <span class="process-math">\(V\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-4-6-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-6-2-1-1">Montrer qu’il existe un ouvert <span class="process-math">\(U\)</span> de <span class="process-math">\(\mathbb{C}[A]\)</span> contenant <span class="process-math">\(0\)</span> et un ouvert <span class="process-math">\(V\)</span> de <span class="process-math">\(\mathbb{C}[A]\)</span> contenant la matrice identité <span class="process-math">\(I_n\)</span> tels que la fonction exponentielle induit une bijection continue de <span class="process-math">\(U \subset \mathbb{C}[A]\)</span> sur <span class="process-math">\(V\)</span> dont la réciproque est une fonction continue sur <span class="process-math">\(V\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-6-2-2-1">Considérons pour toute la suite de cette partie le <span class="process-math">\(\mathbb{R}\)</span>-espace vectoriel <span class="process-math">\(E = \mathbb{C}[A]\)</span> et l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func fEEM{e^{M}}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-3">
+<span class="process-math">\(f\)</span> est bien à valeur dans <span class="process-math">\(E\)</span> d’après la question 9 (sol. 9). Rappelons en outre que <span class="process-math">\(E\)</span> est aussi un anneau commutatif.</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-4">Fixons <span class="process-math">\(M \in E\)</span> et soit <span class="process-math">\(H \in E\)</span> quelconque. Puisque <span class="process-math">\(MH = HM\)</span> alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{M+H} - e^M = e^M (e^H - I_n) = e^M H + e^M \sum_{k=2}^{+\infty} \frac{1}{k!} H^k
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-6">Par ailleurs, en utilisant une norme d’algèbre <span class="process-math">\(\Vert .\Vert \)</span> de <span class="process-math">\(E\text{,}\)</span> par convergence absolue de la série exponentielle on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\| e^M \sum_{k=2}^{+\infty} \frac{1}{k!} H^k \right\| \leq \left\| e^M \right\| \left( \sum_{k=2}^{+\infty} \frac{\Vert H\Vert ^k}{k!} \right) = \left\| e^M \right\| \left( e^{\Vert H\Vert } - 1 - \Vert H\Vert  \right)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-8">Sachant qu’au voisinage de 0 on a <span class="process-math">\(e^t - 1 - t = o(t)\)</span> alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{M} \sum_{k=2}^{+\infty} \frac{1}{k!} H^k = o(\Vert H\Vert )
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-10">En constant que l’application <span class="process-math">\(H \longmapsto e^{M} H\)</span> est linéaire, la relation (6) signifie alors que <span class="process-math">\(f\)</span> différentiable en <span class="process-math">\(M\)</span> et que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall H \in E \quad df(M)(H) = e^{M} H
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-12">Ensuite pour tout <span class="process-math">\(H \in E\text{,}\)</span> l’application <span class="process-math">\(M \longmapsto D_H f(M) = e^{M} H\)</span> est continue par continuité de l’application exponentielle donc <span class="process-math">\(f\)</span> est de classe <span class="process-math">\(\mathcal{C}^1\)</span> sur <span class="process-math">\(E\text{.}\)</span> Par ailleurs, la relation (7) implique en particulier que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+df(0) = id_E
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-6-2-2-14">Finalement, selon la question 7b (sol. 7b),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Il existe un ouvert } U \text{ de } E \text{ voisinage de la matrice nulle et un ouvert } V \text{ voisinage de } I_n = e^0 \text{ telle que } f \text{ induise une bijection de classe } \mathcal{C}^1 \text{ de } U \text{ sur } V \text{ et dont la réciproque est continue.}
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-4-6-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-4-6-3-1-1">En déduire que <span class="process-math">\(\exp(\mathbb{C}[A])\)</span> est un ouvert de <span class="process-math">\(\mathbb{C}[A]\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-6-3-2-1">Soit <span class="process-math">\(M_0 \in E\text{.}\)</span> Puisque la matrice <span class="process-math">\(e^{M_0}\)</span> est inversible et que <span class="process-math">\(E\)</span> est stable par multiplication matricielle, l’application <span class="process-math">\(u : H \in E \longmapsto e^{M_0} H\)</span> est un automorphisme de <span class="process-math">\(E\text{.}\)</span> L’espace <span class="process-math">\(E\)</span> étant de dimension finie, <span class="process-math">\(u\)</span> et <span class="process-math">\(u^{-1}\)</span> sont continues. L’ensemble <span class="process-math">\(e^{M_0} V\)</span> est donc un ouvert de <span class="process-math">\(E\)</span> comme image réciproque par <span class="process-math">\(u^{-1}\)</span> de l’ouvert <span class="process-math">\(V\)</span> de <span class="process-math">\(E\text{.}\)</span> Puisque <span class="process-math">\(I_n \in V\)</span> alors <span class="process-math">\(e^{M_0} \in e^{M_0} V\)</span> et donc <span class="process-math">\(e^{M_0} V\)</span> est un voisinage de <span class="process-math">\(e^{M_0}\text{.}\)</span> Alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\exp(\mathbb{C}[A]) \text{ est un ouvert de } \mathbb{C}[A]
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-4-7"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-4-7-1-1">Montrer que <span class="process-math">\(\exp(\mathbb{C}[A])\)</span> est un fermé de <span class="process-math">\((\mathbb{C}[A])^*\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-4-7-2-1">Rappelons que <span class="process-math">\((\mathbb{C}[A])^* = \mathbb{C}[A] \cap GL_n(\mathbb{C})\text{.}\)</span> Pour tout <span class="process-math">\(M \in \mathbb{C}[A]\text{,}\)</span> <span class="process-math">\(e^{M}\)</span> est inversible et <span class="process-math">\(e^{M} \in \mathbb{C}[A]\)</span> donc on a bien <span class="process-math">\(\exp(\mathbb{C}[A]) \subset (\mathbb{C}[A])^*\text{.}\)</span> Soit maintenant <span class="process-math">\((e^{M_k})_k\)</span> une suite convergente d’éléments de <span class="process-math">\(\exp(\mathbb{C}[A])\)</span> et notons <span class="process-math">\(L\)</span> sa limite. Rappelons que pour toute matrice <span class="process-math">\(M \in \mathcal{M}_n(\mathbb{C})\)</span> on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\det(e^{M}) = e^{\text{tr}(M)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-3">Considérons l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func vE{\mathbb{R}}M{|\det M|}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-5">
+<span class="process-math">\(v\)</span> est continue par composition des applications continues <span class="process-math">\(\det\)</span> et <span class="process-math">\(| \cdot |\text{.}\)</span> Donc la suite <span class="process-math">\((v(e^{M_k}))_k\)</span> converge vers <span class="process-math">\(v(L)\text{.}\)</span> Soit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|\det L| = \lim_{k \to +\infty} |\det(e^{M_k})| = \lim_{k \to +\infty} e^{\text{Re}(\text{tr}(M_k))}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-7">La suite <span class="process-math">\((e^{\text{Re}(\text{tr}(M_k))})_k\)</span> est ainsi convergente. Par continuité de l’application <span class="process-math">\(\ln\text{,}\)</span> la suite <span class="process-math">\((\text{Re}(\text{tr}(M_k)))_k\)</span> est convergente. Si on note <span class="process-math">\(\alpha\)</span> sa limite alors <span class="process-math">\(\lim_{k \to +\infty} e^{\text{Re}(\text{tr}(M_k))} = e^{\alpha}\)</span> et ainsi</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|\det L| = e^{\alpha} \neq 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-9">La matrice <span class="process-math">\(L\)</span> est ainsi inversible. La suite <span class="process-math">\((L^{-1} e^{M_k})_k\)</span> converge vers la matrice <span class="process-math">\(I_n\text{.}\)</span> Puisque <span class="process-math">\(V\)</span> est un voisinage de <span class="process-math">\(I_n\)</span> alors il existe un entier <span class="process-math">\(k_0 \gt 0\)</span> tel que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k \geq k_0 \quad L^{-1} e^{M_k} \in V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-11">Puisque <span class="process-math">\(V = f(U)\text{,}\)</span> il existe <span class="process-math">\(N \in U\)</span> tel que <span class="process-math">\(L^{-1} e^{M_{k_0}} = e^N\text{.}\)</span> Par suite</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L = e^{M_{k_0}} e^{-N} = e^{M_{k_0} - N} \quad (NM_{k_0} = M_{k_0} N)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-4-7-2-13">Comme <span class="process-math">\(M_{k_0} - N \in E\)</span> alors <span class="process-math">\(L \in \exp(E)\text{.}\)</span> Finalement :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\exp(\mathbb{C}[A]) \text{ est un fermé de } (\mathbb{C}[A])^*
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="subexercises" id="part-anaproba-4-2-5"><h4 class="heading"><span class="title">QUATRIÈME PARTIE</span></h4>
+<div class="introduction" id="part-anaproba-4-2-5-2">
+<div class="para" id="part-anaproba-4-2-5-2-1">Soient <span class="process-math">\(T \gt 0\)</span> un nombre réel et <span class="process-math">\(n \in \mathbb{N}^*\)</span> un entier naturel. Soit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func A{\mathbb{R}}{\mathcal{M}_n(\mathbb{C})}t{A(t)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-2-3">une application continue sur <span class="process-math">\(\mathbb{R}\)</span> et <span class="process-math">\(T\)</span>-périodique. On considère le système différentiel</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X'(t) = A(t)X(t) \tag{2}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-2-5">où <span class="process-math">\(X\)</span> est une fonction de <span class="process-math">\(\mathbb{R}\)</span> dans <span class="process-math">\(\mathbb{C}^n\text{,}\)</span> de classe <span class="process-math">\(\mathcal{C}^1\)</span> sur <span class="process-math">\(\mathbb{R}\text{.}\)</span>
+</div>
+</div>
+<article class="exercise exercise-like" id="part-anaproba-4-2-5-3"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-5-3-1-1">Montrer qu’il existe <span class="process-math">\(\mu \in \mathbb{C}^*\)</span> et une solution <span class="process-math">\(Y \in \mathcal{C}^1 (\mathbb{R}, \mathbb{C}^n)\)</span> non nulle de (2) tels que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad Y(t + T) = \mu Y(t).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-3-2-1">Notons <span class="process-math">\(S\)</span> l’ensemble des solutions de (2) et considérons l’endomorphisme</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\func \Phi S SY{t \mapsto Y(t + T)}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-3-2-3">
+<span class="process-math">\(\Phi\)</span> est linéaire et elle est bien à valeurs dans <span class="process-math">\(S\)</span> puisque pour toute solution <span class="process-math">\(Y\)</span> de (2), la fonction <span class="process-math">\(t \longmapsto Y(t + T)\)</span> est une solution de (2). En outre, <span class="process-math">\(\Phi\)</span> est bijectif de bijection réciproque l’application</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Phi^{-1} : Y \longmapsto (t \mapsto Y(t - T))
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-3-2-5">Ainsi, toutes les valeurs propres de <span class="process-math">\(\Phi\)</span> sont non nulles. Soient donc <span class="process-math">\(\mu\)</span> une valeur propre de <span class="process-math">\(\Phi\)</span> et <span class="process-math">\(Y\)</span> un vecteur propre qui lui est associé. Alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad Y(t + T) = \mu Y(t)
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-4"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-5-4-1"><div class="para" id="part-anaproba-4-2-5-4-1-1">Soit <span class="process-math">\((Y_1, Y_2, \ldots, Y_n)\)</span> une base de <span class="process-math">\(S\text{.}\)</span> Pour <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on note <span class="process-math">\(M(t)\)</span> la matrice dont les colonnes sont <span class="process-math">\(Y_1(t), \ldots, Y_n(t)\text{.}\)</span> On dispose ainsi d’une application <span class="process-math">\(M\)</span> de <span class="process-math">\(\mathbb{R}\)</span> dans <span class="process-math">\(\mathcal{M}_n(\mathbb{C})\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-5-4-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-4-2-1-1">Montrer que pour tout nombre réel <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(M(t) \in GL_n(\mathbb{C})\)</span> et <span class="process-math">\(M'(t) = A(t)M(t)\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-4-2-2-1">La famille <span class="process-math">\((Y_1, Y_2, \ldots, Y_n)\)</span> est un système fondamental de solutions de (2), donc pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> la famille <span class="process-math">\((Y_1(t), Y_2(t), \ldots, Y_n(t))\)</span> est une base de <span class="process-math">\(\mathbb{C}^n\text{.}\)</span> Ce qui signifie que les vecteurs colonnes de la matrice <span class="process-math">\(M(t)\)</span> forment une base de <span class="process-math">\(\mathbb{C}^n\text{.}\)</span> Elle est donc inversible. Par ailleurs, on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k \in [1; n] \quad \forall t \in \mathbb{R} \quad Y_k'(t) = A(t)Y_k(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-2-2-3">Ce qui ne représente que l’identification colonne par colonne dans l’égalité</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad M'(t) = A(t)M(t)
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-4-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-4-3-1-1">Montrer que la matrice <span class="process-math">\((M(t))^{-1}M(t + T)\)</span> est indépendante de <span class="process-math">\(t \in \mathbb{R}\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-4-3-2-1">Considérons l’application <span class="process-math">\(U\)</span> définie sur <span class="process-math">\(\mathbb{R}\)</span> par</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad U(t) = M(t)^{-1}M(t + T)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-3-2-3">Rappelons que pour tout <span class="process-math">\(t \in \mathbb{R}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M(t)^{-1} = \frac{1}{\det M(t)} \cdot \text{Com}(M(t)) = \frac{1}{\det M(t)} ((-1)^{i+j}\Delta_{j,i}(t))
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-3-2-5">où <span class="process-math">\((-1)^{i+j}\Delta_{i,j}(t)\)</span> est le cofacteur du coefficient d’indice <span class="process-math">\((i, j)\)</span> de <span class="process-math">\(M(t)\text{.}\)</span> Les fonctions <span class="process-math">\(t \mapsto \det M(t)\)</span> et <span class="process-math">\(t \mapsto \Delta_{i,j}(t)\)</span> sont des sommes de produits des applications composantes de l’application <span class="process-math">\(M\text{.}\)</span> Elles sont donc de classe <span class="process-math">\(\mathcal{C}^1\text{.}\)</span> L’application <span class="process-math">\(t \longmapsto M(t)^{-1}\)</span> est donc de classe <span class="process-math">\(\mathcal{C}^1\)</span> car ses composantes sont de classe <span class="process-math">\(\mathcal{C}^1\text{.}\)</span> En dérivant ensuite la relation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M(t)^{-1}M(t) = I_n
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-3-2-7">on déduit que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad \frac{dM(t)^{-1}}{dt} = -M(t)^{-1}M'(t)M(t)^{-1}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-3-2-9">
+<span class="process-math">\(U\)</span> est ainsi une fonction de classe <span class="process-math">\(\mathcal{C}^1\)</span> comme produit de fonctions de classe <span class="process-math">\(\mathcal{C}^1\)</span> à valeurs dans une algèbre normée et on a pour tout <span class="process-math">\(t \in \mathbb{R}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U'(t) = -M(t)^{-1}M'(t)M(t)^{-1}M(t + T) + M(t)^{-1}M'(t + T)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -M(t)^{-1}A(t)M(t)M(t)^{-1}M(t + T) + M(t)^{-1}A(t)M(t + T)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-3-2-13">Donc <span class="process-math">\(U\)</span> est partout constante sur l’intervalle <span class="process-math">\(\mathbb{R}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{La matrice } M(t)^{-1}M(t + T) \text{ ne dépend pas de } t \in \mathbb{R}.
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-4-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-4-4-1-1">En déduire qu’il existe <span class="process-math">\(B \in \mathcal{M}_n(\mathbb{C})\)</span> telle que :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad M(t + T) = M(t) \exp(TB).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-4-4-2-1">Posons <span class="process-math">\(U_0 = M(0)^{-1}M(T)\text{.}\)</span> D’après la question précédente, on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad M(t + T) = M(t)U_0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-4-2-3">La matrice <span class="process-math">\(U_0\)</span> est inversible comme produit de matrices inversibles donc par surjectivité de l’application exp, il existe <span class="process-math">\(B \in \mathcal{M}_n(\mathbb{C})\)</span> telle que <span class="process-math">\(U_0 = e^{TB}\text{.}\)</span> On a alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad M(t + T) = M(t)e^{TB}
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-4-5"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-4-5-1-1">En déduire qu’il existe une application <span class="process-math">\(Q : \mathbb{R} \to GL_n(\mathbb{C})\)</span> continue sur <span class="process-math">\(\mathbb{R}\)</span> et <span class="process-math">\(T\)</span>-périodique telle que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R}, \quad M(t) = Q(t) \exp(tB).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-4-5-2-1">Posons pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) = M(t)e^{-tB}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-5-2-3">
+<span class="process-math">\(Q(t)\)</span> est inversible car c’est le produit de deux matrices inversibles. Les applications <span class="process-math">\(M\)</span> et <span class="process-math">\(t \mapsto e^{-tB}\)</span> sont continues (cette dernière est même de classe <span class="process-math">\(\mathcal{C}^{\infty}\text{,}\)</span> résultat de cours) donc <span class="process-math">\(Q\)</span> est continue comme produit d’applications continues à valeurs dans une algèbre normée. Soit ensuite <span class="process-math">\(t \in \mathbb{R}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t + T) = M(t + T)e^{-(t + T)B}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= M(t)e^{TB}e^{-(t + T)B}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= M(t)e^{-tB}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= Q(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-4-5-2-8">Ce qui montre que <span class="process-math">\(Q\)</span> est <span class="process-math">\(T\)</span>-périodique.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Il existe une application } Q : \mathbb{R} \longrightarrow \mathcal{M}_n(\mathbb{C}) \text{ continue et } T\text{-périodique telle que}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad M(t) = Q(t) e^{tB}
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-5"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-5-5-1">
+<div class="para" id="part-anaproba-4-2-5-5-1-1">On admet qu’il existe deux matrices <span class="process-math">\(D\)</span> et <span class="process-math">\(N\)</span> de <span class="process-math">\(\mathcal{M}_n(\mathbb{C})\)</span> telles que <span class="process-math">\(D\)</span> est diagonalisable, <span class="process-math">\(N\)</span> est nilpotente et</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B = D + N \text{ et } DN = ND.
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-1-3">Il existe donc une matrice <span class="process-math">\(P \in GL_n(\mathbb{C})\)</span> et une matrice diagonale <span class="process-math">\(\Delta\)</span> telles que <span class="process-math">\(D = PAP^{-1}\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="part-anaproba-4-2-5-5-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-5-2-1-1">Pour <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on note <span class="process-math">\(Z_1(t), Z_2(t), \ldots, Z_n(t) \in \mathbb{C}^n\)</span> les colonnes de la matrice <span class="process-math">\(M(t)P\text{.}\)</span> Montrer que <span class="process-math">\((Z_1, Z_2, \ldots, Z_n)\)</span> est une base de l’espace <span class="process-math">\(S\text{.}\)</span>
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-5-2-2-1">Notons <span class="process-math">\(V_1, V_2, \ldots, V_n\)</span> les vecteurs colonnes de la matrice <span class="process-math">\(P\text{.}\)</span> On a alors pour tout <span class="process-math">\(k \in [1; n]\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad Z_k(t) = M(t)V_k
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-2-2-3">Si <span class="process-math">\(V\)</span> est un vecteur quelconque de <span class="process-math">\(\mathbb{C}^n\text{,}\)</span> alors pour tout <span class="process-math">\(t \in \mathbb{R}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dt}(M(t)V) = M'(t)V = A(t)M(t)V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-2-2-5">Ce qui signifie que la fonction <span class="process-math">\(t \longmapsto M(t)V\)</span> est une solution du système différentiel <span class="process-math">\(X' = A(t)X\text{.}\)</span> Les fonctions <span class="process-math">\(Z_1, Z_2, \ldots, Z_k\)</span> sont donc des éléments de <span class="process-math">\(S\text{.}\)</span> Ensuite, puisque <span class="process-math">\(M(t)\)</span> et <span class="process-math">\(P\)</span> sont inversibles, alors <span class="process-math">\(M(t)P\)</span> est inversible et donc <span class="process-math">\((Z_1(t), Z_2(t), \ldots, Z_n(t))\)</span> est une base de <span class="process-math">\(\mathbb{C}^n\)</span> pour tout <span class="process-math">\(t \in \mathbb{R}\text{.}\)</span> Alors <span class="process-math">\((Z_1, Z_2, \ldots, Z_n)\)</span> est un système fondamental de solutions du système <span class="process-math">\(X' = A(t)X\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(Z_1, Z_2, \ldots, Z_n) \text{ est une base de } S.
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-5-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-5-3-1-1">Soient <span class="process-math">\(\lambda_1, \ldots, \lambda_n\)</span> les nombres complexes tels que <span class="process-math">\(\Delta = \text{Diag} (\lambda_1, \lambda_2, \ldots, \lambda_n)\text{.}\)</span> Pour tous <span class="process-math">\(0 \leq i \leq n - 1\text{,}\)</span> <span class="process-math">\(1 \leq k \leq n\)</span> et <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on note <span class="process-math">\(R_{i,k}(t)\)</span> la <span class="process-math">\(k^{\text{ème}}\)</span> colonne de la matrice <span class="process-math">\(\frac{1}{i!}Q(t)N^iP\text{.}\)</span> Montrer que pour tout <span class="process-math">\(k \in \{1, 2, \ldots, n\}\text{,}\)</span> on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z_k(t) = e^{\lambda_k t} \left( \sum_{i=0}^{n-1} t^i R_{i,k}(t) \right)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-3-1-3">et vérifier que les applications <span class="process-math">\(R_{i,k}\)</span> sont continues sur <span class="process-math">\(\mathbb{R}\)</span> et <span class="process-math">\(T\)</span>-périodiques.</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-5-3-2-1">Comme <span class="process-math">\(B = D + N\text{,}\)</span> <span class="process-math">\(DN = ND\)</span> et <span class="process-math">\(N\)</span> est nilpotente, alors pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on peut écrire</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{tB} = e^{tN} e^{tD} = \sum_{j=0}^{n-1} \frac{t^j}{j!} N^j e^{tD}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-3-2-3">Soit maintenant <span class="process-math">\(k \in [1; n]\text{.}\)</span> Par définition du vecteur <span class="process-math">\(V_k\text{,}\)</span> on a <span class="process-math">\(DV_k = \lambda_k V_k\)</span> et donc <span class="process-math">\(e^{tD} V_k = e^{\lambda_k t} V_k\text{.}\)</span> Alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z_k(t) = Q(t) e^{tB} V_k = e^{\lambda_k t} \left( \sum_{j=0}^{n-1} \frac{t^j}{j!} Q(t) N^j V_k \right)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-3-2-5">En posant pour tout <span class="process-math">\(j \in [0; n - 1]\text{,}\)</span> <span class="process-math">\(R_{j,k}(t) = (1/j)! Q(t) N^j V_k\text{,}\)</span> on voit que :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{les fonctions } R_{0,k}, R_{1,k}, \cdots, R_{n-1,k} \text{ sont continues } T\text{-périodiques et}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad Z_k(t) = e^{\lambda_k t} \left( \sum_{k=0}^{n-1} t^j R_{j,k}(t) \right)
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-5-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-5-4-1-1">En déduire que si les parties réelles des <span class="process-math">\(\lambda_i\)</span> pour <span class="process-math">\(1 \leq i \leq n\)</span> sont strictement négatives et si <span class="process-math">\(Y\)</span> est une solution quelconque de (2), alors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{t \to +\infty} Y(t) = 0.
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-5-4-2-1">On suppose que les parties réelles des scalaires <span class="process-math">\(\lambda_1, \lambda_2, \ldots, \lambda_n\)</span> sont strictement négatives. Sachant que toute solution <span class="process-math">\(Y\)</span> de (2) est une combinaison linéaire des fonctions <span class="process-math">\(Z_1, Z_2, \ldots, Z_n\text{,}\)</span> il suffit de justifier que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k \in [1; l] \quad \lim_{t \to +\infty} Z_k(t) = 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-4-2-3">Soit donc <span class="process-math">\(k \in [1; n]\text{.}\)</span> Les fonctions <span class="process-math">\(R_{j,k}, j \in [0; n - 1]\)</span> sont continues périodiques sur <span class="process-math">\(\mathbb{R}\)</span> donc elles sont bornées sur <span class="process-math">\(\mathbb{R}\text{.}\)</span> Notons <span class="process-math">\(K\)</span> un majorant commun de tous les réels <span class="process-math">\(\Vert R_{j,k}(t)\Vert \)</span> pour tout <span class="process-math">\(t \in \mathbb{R}\text{.}\)</span> L’expression de <span class="process-math">\(Z_k(t)\)</span> donnée en (14) aboutit alors à</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in [1; +\infty] \quad \Vert Z_k(t)\Vert  \leq K e^{\text{Re}(\lambda_k)t} \sum_{j=0}^{n-1} t^j \leq nK t^n e^{\text{Re}(\lambda_k)t}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-5-4-2-5">Puisque <span class="process-math">\(\text{Re}(\lambda_k) t 0\text{,}\)</span> alors <span class="process-math">\(t^n e^{\text{Re}(\lambda_k)t} \longrightarrow 0\)</span> et donc <span class="process-math">\(Z_k(t) \longrightarrow 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Si } \text{Re}(\lambda_k) t 0 \text{ pour tout } k \in [1; n] \text{ alors pour toute solution } Y \text{ du système différentiel (2) on a}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{t \to +\infty} Y(t) = 0
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-6"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="introduction" id="part-anaproba-4-2-5-6-1"><div class="para" id="part-anaproba-4-2-5-6-1-1">Montrer que si <span class="process-math">\(B\)</span> a une valeur propre de la forme <span class="process-math">\(\lambda = i\frac{2k\pi}{m}\)</span> avec <span class="process-math">\(k \in \mathbb{Z}\)</span> et <span class="process-math">\(m \in \mathbb{N}^*\text{,}\)</span> alors (2) a une solution <span class="process-math">\(mT\)</span>-périodique non nulle.</div></div>
+<article class="task exercise-like" id="part-anaproba-4-2-5-6-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-6-2-1-1">Montrer que si <span class="process-math">\(B\)</span> a une valeur propre de la forme <span class="process-math">\(\lambda = i\frac{2k\pi}{m}\)</span> avec <span class="process-math">\(k \in \mathbb{Z}\)</span> et <span class="process-math">\(m \in \mathbb{N}^*\text{,}\)</span> alors (2) a une solution <span class="process-math">\(mT\)</span>-périodique non nulle.</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-6-2-2-1">On suppose que <span class="process-math">\(B\)</span> admet une valeur propre de la forme <span class="process-math">\(\lambda = i\frac{2k\pi}{m}\)</span> avec <span class="process-math">\(k \in \mathbb{Z}\)</span> et <span class="process-math">\(m \in \mathbb{N}^*\text{.}\)</span> Soit <span class="process-math">\(V\)</span> un vecteur propre qui lui est associé. La fonction <span class="process-math">\(Y : t \longmapsto M(t)V\)</span> est une solution de (2) et on a pour tout <span class="process-math">\(t \in \mathbb{R}\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y(t) = Q(t)e^{tB}V = Q(t)e^{\lambda t}V = Q(t)e^{i\frac{2k\pi}{m}t}V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-6-2-2-3">Les applications <span class="process-math">\(Q\)</span> et <span class="process-math">\(t \longmapsto e^{i\frac{2k\pi}{m}t}\)</span> sont respectivement <span class="process-math">\(T\)</span>-périodique et <span class="process-math">\(mT\)</span>-périodique donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y \text{ est une solution de (2) qui est } mT\text{-périodique}
+\end{equation*}
+</div>
+</div></details></div></article><article class="task exercise-like" id="part-anaproba-4-2-5-6-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="part-anaproba-4-2-5-6-3-1-1">On suppose qu’il existe <span class="process-math">\(m \in \mathbb{N}^*\)</span> tel que (2) possède une solution <span class="process-math">\(mT\)</span>-périodique non nulle. Montrer que <span class="process-math">\(\exp(TB)\)</span> possède une valeur propre qui est une racine <span class="process-math">\(m^{\text{ème}}\)</span> de l’unité.</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-6-3-2-1">On suppose que (2) admet une solution non nulle <span class="process-math">\(mT\)</span>-périodique. Selon (11), il existe un vecteur non nul <span class="process-math">\(V \in \mathbb{C}^n\)</span> tel que <span class="process-math">\(Y(t) = M(t)V\)</span> pour tout <span class="process-math">\(t \in \mathbb{R}\text{.}\)</span> On a alors, en utilisant l’écriture (10)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad Y(t) = Q(t)e^{tB}V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-6-3-2-3">Puisque <span class="process-math">\(Y\)</span> et <span class="process-math">\(Q\)</span> sont <span class="process-math">\(mT\)</span>-périodiques, on a pour tout <span class="process-math">\(t \in \mathbb{R}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t)e^{(t + mT)B}V = Q(t)e^{tB}V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-6-3-2-5">et donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{mTB}V = V
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-6-3-2-7">signalant que 1 est une valeur propre de la matrice <span class="process-math">\(e^{mTB}\text{.}\)</span> Puisque les valeurs propres de <span class="process-math">\(e^{mTB}\)</span> sont les nombres de la forme <span class="process-math">\(\lambda^m\)</span> où <span class="process-math">\(\lambda\)</span> décrit le spectre complexe de <span class="process-math">\(e^{TB}\text{,}\)</span> on en déduit que :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Si (2) admet une solution } mT\text{-périodique alors la matrice } e^{TB} \text{ admet au moins une valeur propre qui est une racine } m^{\text{ème}} \text{ de l’unité.}
+\end{equation*}
+</div>
+</div></details></div></article></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-7"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-5-7-1-1">Dans cette question, on suppose que (2) possède une solution <span class="process-math">\(T'\)</span>-périodique <span class="process-math">\(X\)</span> avec <span class="process-math">\(T' \notin \mathbb{Q}T\text{.}\)</span> Montrer que pour tous <span class="process-math">\(t \in \mathbb{R}\)</span> et <span class="process-math">\(u \in \mathbb{R}\text{,}\)</span> on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(u)X(t) = A(t)X(t).
+\end{equation*}
+</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-7-2-1">On suppose que (2) admet une solution <span class="process-math">\(X\)</span> qui est <span class="process-math">\(T'\)</span>-périodique avec <span class="process-math">\(T'/T \notin \mathbb{Q}\text{.}\)</span> On a alors la relation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k \in \mathbb{Z} \quad \forall t \in \mathbb{R} \quad A(t + kT')X(t) = A(t)X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-7-2-3">découlant de l’égalité <span class="process-math">\(X'(t + kT') = X'(t)\text{.}\)</span> Et puisque <span class="process-math">\(A\)</span> est <span class="process-math">\(T\)</span>-périodique, on a même</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k, h \in \mathbb{Z} \quad \forall t \in \mathbb{R} \quad A(t + kT' + hT)X(t) = A(t)X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-7-2-5">ou encore, en posant <span class="process-math">\(G = T\mathbb{Z} + T'\mathbb{Z}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall g \in G \quad \forall t \in \mathbb{R} \quad A(g + t)X(t) = A(t)X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-7-2-7">
+<span class="process-math">\(G\)</span> est un sous-groupe de <span class="process-math">\((\mathbb{R}, +)\text{.}\)</span> Supposons qu’il existe <span class="process-math">\(a \in \mathbb{R}\)</span> tel que <span class="process-math">\(G = a\mathbb{Z}\text{.}\)</span> Puisque <span class="process-math">\(T \in G\)</span> et <span class="process-math">\(T' \in G\text{,}\)</span> il existerait <span class="process-math">\(u, u' \in \mathbb{Z}^*\)</span> tels que <span class="process-math">\(T = au\)</span> et <span class="process-math">\(T' = au'\text{.}\)</span> Ce qui impliquerait que <span class="process-math">\(T'/T \in \mathbb{Q}\text{,}\)</span> entrant en contradiction avec l’hypothèse faite sur <span class="process-math">\(T'\text{.}\)</span> <span class="process-math">\(G\)</span> n’est donc pas un sous-groupe discret de <span class="process-math">\((\mathbb{R}, +)\)</span> et donc il est dense dans <span class="process-math">\(\mathbb{R}\text{.}\)</span> Pour un réel <span class="process-math">\(t\)</span> fixé, l’application <span class="process-math">\(s \mapsto A(s + t)X(t) - A(t)X(t)\)</span> est continue sur <span class="process-math">\(\mathbb{R}\)</span> et elle est partout nulle sur la partie dense <span class="process-math">\(G\text{.}\)</span> Elle est donc partout nulle sur <span class="process-math">\(\mathbb{R}\text{.}\)</span> On conclut en posant <span class="process-math">\(u = t + s\)</span> que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t, u \in \mathbb{R} \quad A(u)X(t) = A(t)X(t)
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-8"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-5-8-1-1">On suppose dans cette question qu’il n’existe pas de sous-espace vectoriel <span class="process-math">\(V \subset \mathbb{C}^n\text{,}\)</span> différent de <span class="process-math">\(\{0\}\)</span> et <span class="process-math">\(\mathbb{C}^n\text{,}\)</span> tel que, pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> <span class="process-math">\(V\)</span> est stable par <span class="process-math">\(A(t)\text{.}\)</span> Donner une condition nécessaire et suffisante sur <span class="process-math">\(A\)</span> et sur <span class="process-math">\(B\)</span> pour que (2) ait au moins une solution périodique non nulle.</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-8-2-1">On suppose qu’il n’existe aucun sous-espace vectoriel (SEV) non trivial <span class="process-math">\(V\)</span> de <span class="process-math">\(\mathbb{C}^n\)</span> qui soit stable par tous les <span class="process-math">\(A(t)\text{,}\)</span> <span class="process-math">\(t \in \mathbb{R}\)</span> et que (2) admet au moins une solution non nulle <span class="process-math">\(X\)</span> qui est <span class="process-math">\(T'\)</span>-périodique. Supposons que <span class="process-math">\(T'/T \notin \mathbb{Q}\text{.}\)</span> Il découle de la question précédente que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t, u, v \in \mathbb{R} \quad A(u)X(t) = A(v)X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-3">Posons pour tout <span class="process-math">\(k \in \mathbb{N}^*\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_k = \bigcap_{u,v \in \mathbb{R}} \text{Ker}(A(u)^k - A(v)^k)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-5">et ensuite</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \bigcap_{k \in \mathbb{N}^*} V_k
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-7">de telle sorte que pour tout vecteur <span class="process-math">\(x \in \mathbb{C}^n\)</span> on ait</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x \in V \iff \forall k \in \mathbb{N}^* \quad \forall u, v \in \mathbb{R} \quad A(u)^k x = A(v)^k x
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-9">Revenons à la relation (15) et dérivons-la par rapport à <span class="process-math">\(t\)</span> :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t, u, v \in \mathbb{R} \quad A(u)A(t)X(t) = A(v)A(t)X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-11">et en recourant encore à (15)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t, u, v \in \mathbb{R} \quad A(u)^2X(t) = A(v)^2X(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-13">Par récurrence sur <span class="process-math">\(k\text{,}\)</span> on démontre selon la même idée que</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall k \in \mathbb{N}^* \quad \forall t, u, v \in \mathbb{R} \quad A(u)^kX(t) = A(v)^kX(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-15">
+<span class="process-math">\(V\)</span> contient donc tous les vecteurs <span class="process-math">\(X(t)\text{.}\)</span> Puisque la fonction <span class="process-math">\(X\)</span> est non nulle, alors le SEV <span class="process-math">\(V\)</span> est non nul. Il est inclus strictement dans <span class="process-math">\(E\)</span> car sinon on aura <span class="process-math">\(V_1 = \mathbb{C}^n\text{.}\)</span> Ce qui signifierait que l’application <span class="process-math">\(A\)</span> est constante, contredisant ainsi l’hypothèse de départ de la question.</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-16">Soient maintenant <span class="process-math">\(x \in V\text{.}\)</span> Pour tout <span class="process-math">\(k \in \mathbb{N}^*\)</span> et pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall u, v \in \mathbb{R} \quad A(u)^kA(t)x = A(u)^{k+1}x = A(v)^{k+1}x = A^k(v)A(t)x
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-18">et donc <span class="process-math">\(A(t)x \in V\text{.}\)</span> Le SEV non trivial <span class="process-math">\(V\)</span> est donc stable par tous les <span class="process-math">\(A(t)\text{,}\)</span> amenant une contradiction.</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-19">Ainsi <span class="process-math">\(T'/T \in \mathbb{Q}\text{.}\)</span> Il existe alors des entiers <span class="process-math">\(m, m' \in \mathbb{N}\)</span> premiers entre eux tels que <span class="process-math">\(m'T' = mT\text{.}\)</span> La solution <span class="process-math">\(X\)</span> est <span class="process-math">\(m'T'\)</span>-périodique et donc <span class="process-math">\(mT\)</span>-périodique. D’après la question 18b (sol. 18b), la matrice <span class="process-math">\(e^{TB}\)</span> admet une valeur propre qui est une racine <span class="process-math">\(m^{\text{ème}}\)</span> de l’unité.</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-20">Réciproquement, supposons que <span class="process-math">\(e^{TB}\)</span> admet une telle valeur propre et notons-la <span class="process-math">\(\mu = e^{\frac{2ik\pi}{m}}\)</span> avec <span class="process-math">\(k \in [0; n - 1]\text{.}\)</span> Les valeurs propres de <span class="process-math">\(e^{TB}\)</span> sont les complexes de la forme <span class="process-math">\(e^{T\lambda}\)</span> où <span class="process-math">\(\lambda\)</span> est une valeur propre de <span class="process-math">\(B\text{.}\)</span> Il existe donc une valeur propre <span class="process-math">\(\lambda\)</span> de <span class="process-math">\(B\)</span> telle que <span class="process-math">\(e^{T\lambda} = \mu\)</span> et par suite</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\exists h \in \mathbb{Z} : \quad T\lambda - \frac{2ik\pi}{m} = 2ih\pi
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-22">ou encore</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lambda = \frac{2i(k + mh)\pi}{mT}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-8-2-24">Selon la question 18a (sol. 18a), (2) admet bien une solution <span class="process-math">\(mT\)</span>-périodique non nulle. Conclusions :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{S’il n’existe aucun SEV non trivial de } \mathbb{C}^n \text{ qui soit stable par toutes les matrices } A(t) \text{ alors (2) admet au moins une solution } T'\text{-périodique non nulle si et seulement s’il existe } m, m' \in \mathbb{N}^* \text{ tels que } e^{TB} \text{ admet une valeur propre qui est une racine } m^{\text{ème}} \text{ de l’unité et } T' = (mT)/m' \text{ (et donc } T' \in T\mathbb{Q})
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-9"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-5-9-1-1">Soit le système différentiel</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X'(t) = A(t)X(t) + b(t) \tag{3}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-1-3">où <span class="process-math">\(b : \mathbb{R} \to \mathbb{C}^n\)</span> est une fonction continue sur <span class="process-math">\(\mathbb{R}\)</span> et <span class="process-math">\(T\)</span>-périodique. On suppose que 1 n’est pas valeur propre de <span class="process-math">\(\exp(TB)\text{.}\)</span> Montrer que (3) possède une unique solution <span class="process-math">\(T\)</span>-périodique.</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-9-2-1">On a vu que les solutions de l’équation homogène de (3) sont les fonctions de la forme <span class="process-math">\(X : t \mapsto M(t)V\)</span> où <span class="process-math">\(V\)</span> est le vecteur colonne des coordonnées de <span class="process-math">\(X\)</span> dans un système fondamental de solutions de celle-ci. La méthode de la variation des constantes revient donc ici à poser <span class="process-math">\(X(t) = M(t)V(t)\)</span> en supposant que <span class="process-math">\(V\)</span> est une fonction de classe <span class="process-math">\(\mathcal{C}^1\text{.}\)</span> Dans ce cas</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X'(t) = A(t)X(t) + b(t) \iff M(t)V'(t) = b(t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iff V'(t) = M(t)^{-1}b(t)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-4">Les primitives de la fonction <span class="process-math">\(t \mapsto M(t)^{-1}b(t)\)</span> peuvent être écrites sous la forme</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t \mapsto V_0 + \int_0^t M(s)^{-1}b(s) \, ds
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-6">où <span class="process-math">\(V_0\)</span> est un vecteur quelconque de <span class="process-math">\(\mathbb{C}^n\text{.}\)</span> Les solutions de (3) sont donc les fonctions</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X : t \mapsto M(t)V_0 + \int_0^t M(t)M(s)^{-1}b(s) \, ds
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-8">avec <span class="process-math">\(V_0\)</span> quelconque dans <span class="process-math">\(\mathbb{C}^n\text{.}\)</span>
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-9">Soit <span class="process-math">\(V_0 \in \mathbb{C}^n\)</span> et considérons la fonction <span class="process-math">\(X\)</span> ci-dessus. Selon la question 16d (sol. 16d), <span class="process-math">\(M(t) = Q(t)e^{tB}\)</span> où <span class="process-math">\(Q\)</span> est une fonction continue <span class="process-math">\(T\)</span>-périodique de <span class="process-math">\(\mathbb{R}\)</span> dans <span class="process-math">\(GL_n(\mathbb{C})\text{.}\)</span> On a donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall t \in \mathbb{R} \quad X(t) = Q(t)e^{tB}V_0 + \int_0^t Q(t)e^{(t-s)B}Q(s)^{-1}b(s) \, ds
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-11">Pour tout <span class="process-math">\(t \in \mathbb{R}\text{,}\)</span> on aura</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X(t + T) - X(t) = Q(t)e^{tB}(e^{TB} - I_n)V_0 + Q(t)e^{tB}\left(e^{TB}\int_0^{t + T}e^{-sB}Q(s)^{-1}b(s) \, ds - \int_0^t e^{-sB}Q(s)^{-1}b(s) \, ds\right)
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-13">Sachant que <span class="process-math">\(Q\)</span> et <span class="process-math">\(b\)</span> sont <span class="process-math">\(T\)</span>-périodiques, avec la translation de la variable <span class="process-math">\(s = u + T\text{,}\)</span> on a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{TB}\int_0^{t + T}e^{-sB}Q(s)^{-1}b(s) \, ds = \int_{-T}^t e^{-uB}Q(u)^{-1}b(u) \, du
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-15">
+<span class="process-math">\(Q(t)e^{tB}\)</span> étant inversible, on a ainsi</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X(t + T) = X(t) \iff (e^{TB} - I_n)V_0 + \int_{-T}^0 e^{-sB}Q(s)^{-1}b(s) \, ds = 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-17">Puisque 1 n’est pas une valeur propre de <span class="process-math">\(e^{TB}\text{,}\)</span> alors <span class="process-math">\(e^{TB} - I_n\)</span> est une matrice inversible. <span class="process-math">\(X\)</span> est donc <span class="process-math">\(T\)</span>-périodique si et seulement si</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_0 = -(e^{TB} - I_n)^{-1}\int_{-T}^0 e^{-sB}Q(s)^{-1}b(s) \, ds = 0
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-9-2-19">D’où l’existence et l’unicité d’une solution <span class="process-math">\(T\)</span>-périodique de (3). Résumons :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Si les applications } A \text{ et } b \text{ sont continues et } T\text{-périodiques et si la matrice } e^{TB} \text{ ne possède pas 1 comme valeur propre alors le système différentiel}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X' = A(t)X + b(t)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{admet une unique solution } T\text{-périodique.}
+\end{equation*}
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="part-anaproba-4-2-5-10"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
+<div class="para" id="part-anaproba-4-2-5-10-1-1">Résoudre le système différentiel</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-5-10-1-2">
+\begin{gather*}
+x'(t) = x(t) - \cos(t)y(t)\\
+y'(t) = \cos(t)x(t) + y(t)
+\end{gather*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-1-3">et déterminer sa forme normale (voir la question 16d).</div>
+<div class="solutions"><details id="part-anaproba-4-2-5-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Précisions et rectifications</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="part-anaproba-4-2-5-10-2-1">En posant <span class="process-math">\(X = (x, y)\text{,}\)</span> le système différentiel s’écrit matriciellement</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X'(t) = A(t)X(t) \tag{16}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-3">où</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t) = 
+\begin{pmatrix}
+1 \amp  -\cos t \\
+\cos t \amp  1
+\end{pmatrix}
+= I + \cos(t)J \quad \text{avec} \quad J =
+\begin{pmatrix}
+0 \amp  -1 \\
+1 \amp  0
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-5">La fonction <span class="process-math">\(A\)</span> est ici <span class="process-math">\(2\pi\)</span>-périodique. La matrice <span class="process-math">\(J\)</span> se réduit dans <span class="process-math">\(\mathcal{M}_2(\mathbb{C})\)</span> de la façon suivante :</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J = P
+\begin{pmatrix}
+i \amp  0 \\
+0 \amp  -i
+\end{pmatrix}
+P^{-1} \quad \text{avec} \quad P =
+\begin{pmatrix}
+1 \amp  1 \\
+-i \amp  i
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-7">donc</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t) = P
+\begin{pmatrix}
+1 + i \cos t \amp  0 \\
+0 \amp  1 - i \cos t
+\end{pmatrix}
+P^{-1}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-9">Comme à l’usage, on pose <span class="process-math">\(Y = (\frac{u}{v}) = P^{-1}X\text{.}\)</span> Le système (16) équivaut alors à</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-5-10-2-10">
+\begin{gather*}
+u' = (1 + i \cos t)u\\
+v' = (1 - i \cos t)v
+\end{gather*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-11">Les solutions de ce dernier système sont données par</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-5-10-2-12">
+\begin{gather*}
+u = \lambda e^{t + i \sin t}\\
+v = \mu e^{t - i \sin t} \quad \lambda, \mu \in \mathbb{C}
+\end{gather*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-13">
+<span class="process-math">\(X = PY\)</span> donc les solutions du système (16) sont données par</div>
+<div class="displaymath process-math" id="part-anaproba-4-2-5-10-2-14">
+\begin{gather*}
+x = u + v = e^t (\lambda e^{i \sin t} + \mu e^{-i \sin t})\\
+y = -i(u - v) = -ie^t (\lambda e^{i \sin t} - \mu e^{-i \sin t})
+\end{gather*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-15">Les fonctions <span class="process-math">\(X_1 : t \mapsto e^{t + i \sin t} (\frac{1}{-i})\)</span> et <span class="process-math">\(X_2 : t \mapsto e^{t - i \sin t} (\frac{1}{i})\)</span> forment un système fondamental de solutions de (16). Le système <span class="process-math">\((Y_1, Y_2)\)</span> en est un autre lorsqu’on pose</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y_1(t) = \frac{1}{2}(X_1(t) + X_2(t)) = e^t
+\begin{pmatrix}
+\cos(\sin t) \\
+\sin(\sin t)
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y_2(t) = \frac{1}{2i}(X_1(t) - X_2(t)) = e^t
+\begin{pmatrix}
+\sin(\sin t) \\
+-\cos(\sin t)
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-18">Sur la base du système fondamental <span class="process-math">\((Y_1, Y_2)\text{,}\)</span> on forme <span class="process-math">\(M\)</span> en posant</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M(t) = e^{t}
+\begin{pmatrix}
+\cos(\sin t) \amp  \sin(\sin t) \\
+\sin(\sin t) \amp  -\cos(\sin t)
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para" id="part-anaproba-4-2-5-10-2-20">L’écriture normale de <span class="process-math">\(M\)</span> est donc <span class="process-math">\(M(t) = Q(t)e^{tB}\)</span> avec</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) =
+\begin{pmatrix}
+\cos(\sin t) \amp  \sin(\sin t) \\
+\sin(\sin t) \amp  -\cos(\sin t)
+\end{pmatrix}
+\quad \text{et} \quad B = I_2
+\end{equation*}
+</div>
+</div></details></div></article></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="part-anaproba-3.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="ibouja@gmail.com" target="_blank">Commentaires</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
