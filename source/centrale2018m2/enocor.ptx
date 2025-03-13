@@ -1,0 +1,38 @@
+<exercises>
+    <title> Fonctions harmoniques et principe du maximum </title>
+    <introduction>
+        <p>
+            Ce problème étudie quelques propriétés des fonctions harmoniques ainsi que quelques exemples de telles fonctions (parties I et II). Dans la partie III, largement indépendante du reste du problème, on montre le principe du maximum faible pour le laplacien. Dans la partie IV, on établit un lien entre les fonctions harmoniques de deux variables et les fonctions développables en série entière, et on propose la résolution du problème de Dirichlet dans le disque unité de ℝ² dans la partie V.
+        </p>
+        </introduction>
+        <subsection >
+            <title>Notations</title>
+        <ul>
+            <li>
+                Dans ce préambule et dans les parties I et III, <m>n</m> désigne un entier strictement positif.
+            </li>
+            <li>
+                On munit ℝⁿ de sa structure euclidienne canonique et <m>\|\cdot\|</m> désigne la norme euclidienne.
+            </li>
+            <li>
+                Si <m>U</m> est une partie de ℝⁿ, alors <m>\overline{U}</m> désigne son adhérence et <m>\partial U</m> sa frontière.
+            </li>
+            <li>
+                Pour <m>a \in \mathbb{R}^n</m> et <m>R \gt 0</m>, on désigne par <m>D(a, R)</m> la boule ouverte de centre <m>a</m> et de rayon <m>R</m> pour la distance euclidienne. Autrement dit
+                <me>D(a, R) = \{x \in \mathbb{R}^n ; \|x - a\| \lt R\}</me>
+                La boule fermée de centre <m>a</m> et de rayon <m>R</m> est alors <m>\overline{D(a, R)}</m>.
+            </li>
+            <li>
+                L’opérateur différentiel <m>\Delta</m> (appelé laplacien) est défini pour toute fonction à valeurs réelles de classe <m>\mathcal{C}^2</m> sur un ouvert <m>U \subset \mathbb{R}^n</m> par
+                <me>\forall x = (x_1, \dots, x_n) \in U, \quad \Delta f(x) = \sum_{i=1}^n \frac{\partial^2 f}{\partial x_i^2}(x)</me>
+            </li>
+            <li>
+                Une fonction <m>f</m> de classe <m>\mathcal{C}^2</m> à valeurs réelles sur un ouvert <m>U</m> de ℝⁿ est dite harmonique sur <m>U</m> si
+                <me>\forall x \in U, \quad \Delta f(x) = 0</me>
+                L’ensemble des fonctions harmoniques sur <m>U</m> est noté <m>\mathcal{H}(U)</m>.
+            </li>
+        </ul>
+    </subsection>
+
+
+</exercises>
