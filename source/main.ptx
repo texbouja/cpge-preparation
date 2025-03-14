@@ -12,7 +12,7 @@
     <!-- Include chapters -->
     <part xml:id="part-anaproba" >
       <title>Analyse et probabilités</title>
-      <!-- <chapter>
+      <chapter>
         <title> Mines 2020, MP, Maths 2 </title>
           <xi:include href="./mines2020m2/enocor.ptx"/>
       </chapter>
@@ -23,7 +23,7 @@
     <chapter>
         <title> XENS 2024, MP, Maths B </title>
           <xi:include href="./xens2024mb/enocor.ptx"/>
-      </chapter> -->
+      </chapter>
     <chapter>
         <title> CENTRALE 2018, MP, Maths II </title>
           <xi:include href="./centrale2018m2/enocor.ptx"/>
